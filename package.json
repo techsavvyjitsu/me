@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bulma-carousel": "git+https://github.com/hegdeashwin/bulma-carousel.git#develop",
+    "bulma-timeline": "git+https://github.com/hegdeashwin/bulma-timeline.git",
     "classnames": "^2.2.5",
     "object-assign": "4.1.1",
     "promise": "8.0.1",

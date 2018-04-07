@@ -1,9 +1,13 @@
 import './aboutMe.less';
+import 'bulma-ext-timeline-css';
+
 import React, { Component } from 'react';
 import Card from '../../components/card';
 import ExtLink from '../../components/extLink';
 import Icon from '../../components/icon';
 import Panel from '../../components/panel';
+import { TimelineHeader, TimelineContent } from '../../components/timeline';
+import Message from '../../components/message';
 import selfImg from '../../assets/imgs/self.jpeg';
 
 class AboutMe extends Component {
@@ -71,11 +75,8 @@ class AboutMe extends Component {
                       </ExtLink>
                     </div>
                   </Panel>
-
                 </Card>
               </div>
-
-              
 
             </div>
             <div className="column is-9">
@@ -95,109 +96,125 @@ class AboutMe extends Component {
                 </ul>
 
                 <Panel title={workPanelTitle}>
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>PayPal India PVT. LTD.</strong> - Software Engineer 2 | 2017 - Present</p>
-                    </div>
-                  </article>
+                  <div className="timeline is-centered">
+                    <TimelineHeader>
+                      <span className="tag is-primary">April 2017 - Present</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>PayPal India PVT. LTD.</strong></p>
+                      <p>Software Engineer 2</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">Oct 2012 - April 2017</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>Cybage Software Pvt. Ltd.</strong></p>
+                      <p>Sr. Software Engineer, Web Developer</p>
+                    </TimelineContent>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Cybage Software Pvt. Ltd.</strong> - Sr. Software Engineer, Web Developer | 2012 - 2017</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Sycamore Software Solutions Pvt. Ltd.</strong> - Software Engineer | 2012</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>React1To1 Technologies Pvt. Ltd.</strong> - Web Application Developer | 2011 - 2012</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Mystical Planet Technologies</strong> - Web Application Developer - Freelancer | 2008</p>
-                    </div>
-                  </article>
+                    <TimelineHeader>
+                      <span className="tag is-primary">June 2012 - Oct 2012</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>Sycamore Software Solutions Pvt. Ltd.</strong></p>
+                      <p>Software Engineer</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">Dec 2011 - April 2012</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>React1To1 Technologies Pvt. Ltd.</strong></p>
+                      <p>Web Application Developer</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">Jan 2008 - Oct 2008</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>Mystical Planet Technologies</strong></p>
+                      <p>Web Application Developer - Freelancer</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-medium is-primary">Start</span>
+                    </TimelineHeader>
+                  </div>
                 </Panel>
 
                 <Panel title={skillsPanelTitle}>
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Server side</strong></p>
-                      <p>GraphQL and REST API development using Node.js, Apollo-Server, GraphCool, ES6 or above, Express, Hapi, 
-                      Loopback, Elasticsearch, Sequelize, Passport, Nodemailer, Mongoose, MySQL etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Server side</strong></p>
+                    <p>GraphQL and REST API development using Node.js, Apollo-Server, GraphCool, ES6 or above, Express, Hapi, 
+                    Loopback, Elasticsearch, Sequelize, Passport, Nodemailer, Mongoose, MySQL etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Client side scripting</strong></p>
-                      <p>Apollo-Client, Relay Modern, React, ReactNative, Vue, Backbone, jQuery, Flux, 
-                      Redux, MobX, Marionette.js, Require.js, Underscore, Electron etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Client side scripting</strong></p>
+                    <p>Apollo-Client, Relay Modern, React, ReactNative, Vue, Backbone, jQuery, Flux, 
+                    Redux, MobX, Marionette.js, Require.js, Underscore, Electron etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>UT & FT</strong></p>
-                      <p>Jest, Mocha, Chai, Sinon, Nemo, Nightwatch etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>UT & FT</strong></p>
+                    <p>Jest, Mocha, Chai, Sinon, Nemo, Nightwatch etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Tools & Utilities</strong></p>
-                      <p>npm, Yarn, Webpack, Browserify, Grunt, Gulp, Gemnasium, Travis-CI, Jenkins-CI, 
-                      SonarQube, ESLint, TSLint, Prettier etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Tools & Utilities</strong></p>
+                    <p>npm, Yarn, Webpack, Browserify, Grunt, Gulp, Gemnasium, Travis-CI, Jenkins-CI, 
+                    SonarQube, ESLint, TSLint, Prettier etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Source code, Bug management tools</strong></p>
-                      <p>Git, (Remotes) GitHub, BitBucket, GitLab. Rally, JIRA, Trello etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Source code, Bug management tools</strong></p>
+                    <p>Git, (Remotes) GitHub, BitBucket, GitLab. Rally, JIRA, Trello etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Operating System</strong></p>
-                      <p>Linux distros (Ubuntu, CentOS etc.), MacOS and Windows.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Operating System</strong></p>
+                    <p>Linux distros (Ubuntu, CentOS etc.), MacOS and Windows.</p>
+                  </Message>
 
                 </Panel>
 
                 <Panel title={eduPanelTitle}>
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>M.C.A.</strong> - Master of Computer Application | University of Pune, Pune, India.</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>B.C.A.</strong> - Bachelor of Computer Application | Veer Narmad South Gujarat University, Surat, India.</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
+                  <div className="timeline is-centered">
+                    <TimelineHeader>
+                      <span className="tag is-primary">2012</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>M.C.A.</strong> - Master of Computer Application</p>
+                      <p>University of Pune, Pune, India</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">2009</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>B.C.A.</strong> - Bachelor of Computer Application</p>
+                      <p>Veer Narmad South Gujarat University, Surat, India</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">2006</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
                       <p><strong>12<sup>th</sup> Science</strong> - G.S.H.S.E. Board, Gandhinagar, India</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">2004</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
                       <p><strong>10<sup>th</sup> Science</strong> - G.S.H.S.E. Board, Gandhinagar, India</p>
-                    </div>
-                  </article>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-medium is-primary">Start</span>
+                    </TimelineHeader>
+                  </div>
                 </Panel>
 
               </div>
