@@ -12,7 +12,6 @@ class Footer extends Component {
         <div className="container">
           <div className="columns is-centered">
             <div className="column has-text-centered">
-              <p className="is-size-6 has-text-primary follow-me-at"><strong>Reach me at</strong></p>
               <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/" classes="social-icon globe">
                 <Icon name="globe" type="fas" size="2x" title="Follow me on YourShot National Geographic" />
               </ExtLink>
