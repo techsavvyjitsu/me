@@ -1,6 +1,6 @@
 {
   "name": "me",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "bulma-carousel": "git+https://github.com/hegdeashwin/bulma-carousel.git#develop",
