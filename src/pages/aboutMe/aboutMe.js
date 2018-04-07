@@ -7,6 +7,7 @@ import ExtLink from '../../components/extLink';
 import Icon from '../../components/icon';
 import Panel from '../../components/panel';
 import { TimelineHeader, TimelineContent } from '../../components/timeline';
+import Message from '../../components/message';
 import selfImg from '../../assets/imgs/self.jpeg';
 
 class AboutMe extends Component {
@@ -143,50 +144,38 @@ class AboutMe extends Component {
                 </Panel>
 
                 <Panel title={skillsPanelTitle}>
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Server side</strong></p>
-                      <p>GraphQL and REST API development using Node.js, Apollo-Server, GraphCool, ES6 or above, Express, Hapi, 
-                      Loopback, Elasticsearch, Sequelize, Passport, Nodemailer, Mongoose, MySQL etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Server side</strong></p>
+                    <p>GraphQL and REST API development using Node.js, Apollo-Server, GraphCool, ES6 or above, Express, Hapi, 
+                    Loopback, Elasticsearch, Sequelize, Passport, Nodemailer, Mongoose, MySQL etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Client side scripting</strong></p>
-                      <p>Apollo-Client, Relay Modern, React, ReactNative, Vue, Backbone, jQuery, Flux, 
-                      Redux, MobX, Marionette.js, Require.js, Underscore, Electron etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Client side scripting</strong></p>
+                    <p>Apollo-Client, Relay Modern, React, ReactNative, Vue, Backbone, jQuery, Flux, 
+                    Redux, MobX, Marionette.js, Require.js, Underscore, Electron etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>UT & FT</strong></p>
-                      <p>Jest, Mocha, Chai, Sinon, Nemo, Nightwatch etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>UT & FT</strong></p>
+                    <p>Jest, Mocha, Chai, Sinon, Nemo, Nightwatch etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Tools & Utilities</strong></p>
-                      <p>npm, Yarn, Webpack, Browserify, Grunt, Gulp, Gemnasium, Travis-CI, Jenkins-CI, 
-                      SonarQube, ESLint, TSLint, Prettier etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Tools & Utilities</strong></p>
+                    <p>npm, Yarn, Webpack, Browserify, Grunt, Gulp, Gemnasium, Travis-CI, Jenkins-CI, 
+                    SonarQube, ESLint, TSLint, Prettier etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Source code, Bug management tools</strong></p>
-                      <p>Git, (Remotes) GitHub, BitBucket, GitLab. Rally, JIRA, Trello etc.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Source code, Bug management tools</strong></p>
+                    <p>Git, (Remotes) GitHub, BitBucket, GitLab. Rally, JIRA, Trello etc.</p>
+                  </Message>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Operating System</strong></p>
-                      <p>Linux distros (Ubuntu, CentOS etc.), MacOS and Windows.</p>
-                    </div>
-                  </article>
+                  <Message>
+                    <p><strong>Operating System</strong></p>
+                    <p>Linux distros (Ubuntu, CentOS etc.), MacOS and Windows.</p>
+                  </Message>
 
                 </Panel>
 
