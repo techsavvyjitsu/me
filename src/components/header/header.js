@@ -1,7 +1,7 @@
 import './header.less';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import selfImg from '../../assets/imgs/self.jpeg';
+import selfPic from '../../assets/imgs/self.jpeg';
 
 class Header extends Component {
   constructor(props) {
@@ -49,7 +49,7 @@ class Header extends Component {
           <div className="navbar-brand">
 
             <Link className="navbar-item" to="">
-              <img src={selfImg} alt="Ashwin Hegde's Picture" /> <strong>Hello World! I am Ashwin, Welcome</strong>
+              <img src={selfPic} alt="Hello World! I am Ashwin, Welcome" /> <strong>Hello World! I am Ashwin, Welcome</strong>
             </Link>
             <div className="navbar-burger burger" data-target="navMenuColordark">
               <span></span>

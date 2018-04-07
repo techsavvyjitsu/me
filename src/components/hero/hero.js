@@ -1,11 +1,12 @@
 import 'bulma-ext-carousel-css';
 
 import React, { Component } from 'react';
-
 import image_1 from '../../assets/imgs/slider_img_1.jpeg';
 import image_2 from '../../assets/imgs/slider_img_2.jpeg';
 import image_3 from '../../assets/imgs/slider_img_3.jpeg';
 import image_4 from '../../assets/imgs/slider_img_4.jpeg';
+
+import '../bulma-carousel/bulma-carousel.min';
 
 class Hero extends Component {
   render() {

@@ -83,16 +83,15 @@ class AboutMe extends Component {
                 
                 <p className="is-size-5">
                   A software craftsman with a positive practicing approach towards software craftsmanship. 
-                  
-                  <ol>
-                    <li>An astute professional with around ~7 years of experience in application development for web.</li>
-                    <li>Work experience on enterprise application development with scratch, maintenance, code review,
-                    code refactoring, unit testing, functional testing, build, deployment & troubleshooting issues
-                    related to projects.</li>
-                    <li>Trainer, mentor, author and tech speaker for JavaScript & Node.js related works.</li>
-                    <li>Believer, follower and contributor to open source projects/repositories.</li>
-                  </ol>
                 </p>
+                <ol className="is-size-5">
+                  <li>An astute professional with around ~7 years of experience in application development for web.</li>
+                  <li>Work experience on enterprise application development with scratch, maintenance, code review,
+                  code refactoring, unit testing, functional testing, build, deployment & troubleshooting issues
+                  related to projects.</li>
+                  <li>Trainer, mentor, author and tech speaker for JavaScript & Node.js related works.</li>
+                  <li>Believer, follower and contributor to open source projects/repositories.</li>
+                </ol>
 
                 <Panel title={workPanelTitle}>
                   <article className="message is-info">
