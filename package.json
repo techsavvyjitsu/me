@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "bulma-extensions": "^1.0.14",
+    "bulma-carousel": "git+https://github.com/hegdeashwin/bulma-carousel.git#develop",
     "classnames": "^2.2.5",
     "object-assign": "4.1.1",
     "promise": "8.0.1",
