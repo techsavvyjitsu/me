@@ -9,7 +9,8 @@ class Icon extends Component {
       name,
       size,
       title,
-      type
+      type,
+      classes
     } = this.props;
 
     let iconStyle = {};
@@ -18,6 +19,10 @@ class Icon extends Component {
 
     if (name) {
       iconStyle[`fa-${name}`] = true;
+    }
+
+    if (classes) {
+      iconStyle[`${classes}`] = true;
     }
 
     iconStyle = classnames(iconStyle);
@@ -37,7 +42,8 @@ Icon.propTypes = {
   name: PropTypes.string,
   size: PropTypes.oneOf(['xs', 'sm', 'lg', '2x', '3x', '5x', '7x', '10x']),
   title: PropTypes.string,
-  type: PropTypes.oneOf(['fab', 'fas', 'far'])
+  type: PropTypes.oneOf(['fab', 'fas', 'far']),
+  classes: PropTypes.string
 };
 
 export default Icon;
