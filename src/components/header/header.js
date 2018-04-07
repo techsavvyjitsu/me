@@ -49,7 +49,7 @@ class Header extends Component {
           <div className="navbar-brand">
 
             <Link className="navbar-item" to="">
-              <img src={selfPic} alt="Hello World! I am Ashwin, Welcome" /> <strong>Hello World! I am Ashwin, Welcome</strong>
+              <img src={selfPic} alt="Hello World! I am Ashwin, Welcome to my website" /> <strong>Hello World!</strong>
             </Link>
             <div className="navbar-burger burger" data-target="navMenuColordark">
               <span></span>
