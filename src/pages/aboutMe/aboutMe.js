@@ -1,9 +1,12 @@
 import './aboutMe.less';
+import 'bulma-ext-timeline-css';
+
 import React, { Component } from 'react';
 import Card from '../../components/card';
 import ExtLink from '../../components/extLink';
 import Icon from '../../components/icon';
 import Panel from '../../components/panel';
+import { TimelineHeader, TimelineContent } from '../../components/timeline';
 import selfImg from '../../assets/imgs/self.jpeg';
 
 class AboutMe extends Component {
@@ -71,11 +74,8 @@ class AboutMe extends Component {
                       </ExtLink>
                     </div>
                   </Panel>
-
                 </Card>
               </div>
-
-              
 
             </div>
             <div className="column is-9">
@@ -95,35 +95,51 @@ class AboutMe extends Component {
                 </ul>
 
                 <Panel title={workPanelTitle}>
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>PayPal India PVT. LTD.</strong> - Software Engineer 2 | 2017 - Present</p>
-                    </div>
-                  </article>
+                  <div className="timeline is-centered">
+                    <TimelineHeader>
+                      <span className="tag is-primary">April 2017 - Present</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>PayPal India PVT. LTD.</strong></p>
+                      <p>Software Engineer 2</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">Oct 2012 - April 2017</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>Cybage Software Pvt. Ltd.</strong></p>
+                      <p>Sr. Software Engineer, Web Developer</p>
+                    </TimelineContent>
 
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Cybage Software Pvt. Ltd.</strong> - Sr. Software Engineer, Web Developer | 2012 - 2017</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Sycamore Software Solutions Pvt. Ltd.</strong> - Software Engineer | 2012</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>React1To1 Technologies Pvt. Ltd.</strong> - Web Application Developer | 2011 - 2012</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>Mystical Planet Technologies</strong> - Web Application Developer - Freelancer | 2008</p>
-                    </div>
-                  </article>
+                    <TimelineHeader>
+                      <span className="tag is-primary">June 2012 - Oct 2012</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>Sycamore Software Solutions Pvt. Ltd.</strong></p>
+                      <p>Software Engineer</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">Dec 2011 - April 2012</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>React1To1 Technologies Pvt. Ltd.</strong></p>
+                      <p>Web Application Developer</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">Jan 2008 - Oct 2008</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>Mystical Planet Technologies</strong></p>
+                      <p>Web Application Developer - Freelancer</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-medium is-primary">Start</span>
+                    </TimelineHeader>
+                  </div>
                 </Panel>
 
                 <Panel title={skillsPanelTitle}>
@@ -175,29 +191,41 @@ class AboutMe extends Component {
                 </Panel>
 
                 <Panel title={eduPanelTitle}>
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>M.C.A.</strong> - Master of Computer Application | University of Pune, Pune, India.</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
-                      <p><strong>B.C.A.</strong> - Bachelor of Computer Application | Veer Narmad South Gujarat University, Surat, India.</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
+                  <div className="timeline is-centered">
+                    <TimelineHeader>
+                      <span className="tag is-primary">2012</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>M.C.A.</strong> - Master of Computer Application</p>
+                      <p>University of Pune, Pune, India</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">2009</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
+                      <p><strong>B.C.A.</strong> - Bachelor of Computer Application</p>
+                      <p>Veer Narmad South Gujarat University, Surat, India</p>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">2006</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
                       <p><strong>12<sup>th</sup> Science</strong> - G.S.H.S.E. Board, Gandhinagar, India</p>
-                    </div>
-                  </article>
-
-                  <article className="message is-info">
-                    <div className="message-body">
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-primary">2004</span>
+                    </TimelineHeader>
+                    <TimelineContent tag="April 2017 - Present">
                       <p><strong>10<sup>th</sup> Science</strong> - G.S.H.S.E. Board, Gandhinagar, India</p>
-                    </div>
-                  </article>
+                    </TimelineContent>
+                    
+                    <TimelineHeader>
+                      <span className="tag is-medium is-primary">Start</span>
+                    </TimelineHeader>
+                  </div>
                 </Panel>
 
               </div>
