@@ -34,7 +34,7 @@ class AboutMe extends Component {
 
     const downPanelTitle = (
       <span>
-        <Icon name="download" type="fas" size="lg" title="Download Resume" /> Download resume
+        <Icon name="download" type="fas" size="lg" title="Download Resume" /> Resume
       </span>
     );
 
@@ -42,7 +42,7 @@ class AboutMe extends Component {
       <section className="about-me-component">
         
         <div className="container">
-          <div className="columns is-multiline is-mobile is-3">
+          <div className="columns">
             <div className="column is-3">
               <div className="is-primary">
                 <Card
@@ -62,7 +62,7 @@ class AboutMe extends Component {
                   </Panel>
 
                   <Panel title={downPanelTitle}>
-                    <div className="buttons is-centered">
+                    <div className="buttons">
                       <ExtLink linkTo="https://www.linkedin.com/in/hegdeashwin/" classes="button is-warning">
                         PDF
                       </ExtLink>
@@ -84,14 +84,15 @@ class AboutMe extends Component {
                 <p className="is-size-5">
                   A software craftsman with a positive practicing approach towards software craftsmanship. 
                 </p>
-                <ol className="is-size-5">
-                  <li>An astute professional with around ~7 years of experience in application development for web.</li>
-                  <li>Work experience on enterprise application development with scratch, maintenance, code review,
+
+                <ul className="is-size-5">
+                  <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" />  An astute professional with around ~7 years of experience in application development for web.</li>
+                  <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 2" /> Work experience on enterprise application development with scratch, maintenance, code review,
                   code refactoring, unit testing, functional testing, build, deployment & troubleshooting issues
                   related to projects.</li>
-                  <li>Trainer, mentor, author and tech speaker for JavaScript & Node.js related works.</li>
-                  <li>Believer, follower and contributor to open source projects/repositories.</li>
-                </ol>
+                  <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 3" /> Trainer, mentor, author and tech speaker for JavaScript & Node.js related works.</li>
+                  <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 4" /> Believer, follower and contributor to open source projects/repositories.</li>
+                </ul>
 
                 <Panel title={workPanelTitle}>
                   <article className="message is-info">
