@@ -1,3 +1,4 @@
+import './card.less';
 import React, { Component } from 'react';
 
 class Card extends Component {
@@ -18,20 +19,17 @@ class Card extends Component {
           </figure>
         </div>
         <div className="card-content">
-          <div className="media">
-            {
-              hasThumbnail &&
-              <div className="media-left">
-                <figure className="image is-48x48">
-                  <img src={thumbnailImg} alt={thumbnailImg} />
-                </figure>
-              </div>
-            }
-            
-            <div>
-              <p className="title is-4">{title}</p>
-              <p className="subtitle is-6">{subTitle}</p>
+          {
+            hasThumbnail &&
+            <div className="media-left">
+              <figure className="image is-48x48">
+                <img src={thumbnailImg} alt={thumbnailImg} />
+              </figure>
             </div>
+          }
+          <div className="card-title has-text-centered">
+            <p className="title is-4">{title}</p>
+            <p className="subtitle is-6 has-text-grey">{subTitle}</p>
           </div>
 
           <div className="content">{this.props.children}</div>
