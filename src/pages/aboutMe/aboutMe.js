@@ -52,7 +52,7 @@ class AboutMe extends Component {
                 <Card
                   img={selfImg}
                   title="Ashwin Hegde"
-                  subTitle="ashwin.hegde3@gmail.com"
+                  subTitle="Software Engineer and Craftsman, Open Source, JavaScript Engineer, Love amateur wildlife, birds, landscape and nature Photography, Foodie, ..."
                   hasThumbnail={false}
                 >
                   <Panel title={langPanelTitle}>
