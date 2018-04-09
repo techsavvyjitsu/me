@@ -50,7 +50,6 @@ class Footer extends Component {
               The source code is licensed <ExtLink linkTo="http://opensource.org/licenses/mit-license.php">MIT</ExtLink>. The website content
               is licensed <ExtLink linkTo="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</ExtLink>.
             </p>
-            <ExtLink linkTo="https://bulma.io"><img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24" /></ExtLink>
           </div>
         </div>
       </footer>
