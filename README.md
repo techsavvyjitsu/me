@@ -4,7 +4,7 @@ Source code of my website.
 
 ## Social connections
 
-* [Visit my website](https://elastic-ride-0ad06f.netlify.com)
+* [Visit my website](https://www.techjitsu.co.in)
 
 * [Follow me on YourShot National Geographic](http://yourshot.nationalgeographic.com/profile/1648246/")
 
