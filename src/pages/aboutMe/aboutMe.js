@@ -18,6 +18,12 @@ class AboutMe extends Component {
       </span>
     );
 
+    const achPanelTitle = (
+      <span>
+        <Icon name="trophy" type="fas" size="lg" title="Achievements" /> Achievements
+      </span>
+    );
+
     const langPanelTitle = (
       <span>
         <Icon name="language" type="fas" size="lg" title="Languages" /> Languages
@@ -83,7 +89,7 @@ class AboutMe extends Component {
               <div className="bd-notification is-info">
                 
                 <p className="is-size-5">
-                  A software craftsman with a positive practicing approach towards software craftsmanship. 
+                  A passionate software craftsman with a positive practicing approach towards software craftsmanship. 
                 </p>
 
                 <ul className="is-size-5">
@@ -94,6 +100,36 @@ class AboutMe extends Component {
                   <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 3" /> Trainer, mentor, author and tech speaker for JavaScript & Node.js related works.</li>
                   <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 4" /> Believer, follower and contributor to open source projects/repositories.</li>
                 </ul>
+
+                <Panel title={achPanelTitle}>
+                  <p className="is-size-5 has-text-link has-text-weight-semibold">Year 2018</p>
+                  <ul className="is-size-5">
+                    <li>
+                      Speaker in internal JS conferences (Upcoming)
+                      <ul>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on DevTools on GraphQL</li>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on GraphQL Clients</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Reviewer and Author
+                      <ul>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> for Packt Publications</li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <p className="is-size-5 has-text-link has-text-weight-semibold">Year 2017</p>
+                  <ul className="is-size-5">
+                    <li>
+                      Speaker in internal JS conferences
+                      <ul>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on GraphQL</li>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on NativeScript</li>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on WebAssembly</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </Panel>
 
                 <Panel title={workPanelTitle}>
                   <div className="timeline is-centered">
