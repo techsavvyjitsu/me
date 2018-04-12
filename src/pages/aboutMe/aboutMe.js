@@ -14,37 +14,43 @@ class AboutMe extends Component {
   render() {
     const eduPanelTitle = (
       <span>
-        <Icon name="graduation-cap" type="fas" size="lg" title="Education Qualifications" /> Education qualifications
+        <Icon name="graduation-cap" type="fas" size="sm" title="Education Qualifications" /> Education qualifications
       </span>
     );
 
     const achPanelTitle = (
       <span>
-        <Icon name="trophy" type="fas" size="lg" title="Achievements" /> Achievements
+        <Icon name="trophy" type="fas" size="sm" title="Achievements" /> Achievements
       </span>
     );
 
     const langPanelTitle = (
       <span>
-        <Icon name="language" type="fas" size="lg" title="Languages" /> Languages
+        <Icon name="language" type="fas" size="sm" title="Languages" /> Languages
       </span>
     );
 
     const workPanelTitle = (
       <span>
-        <Icon name="briefcase" type="fas" size="lg" title="Professional experience" /> Professional experience
+        <Icon name="briefcase" type="fas" size="sm" title="Professional experience" /> Professional experience
       </span>
     );
 
     const skillsPanelTitle = (
       <span>
-        <Icon name="code" type="fas" size="lg" title="Technical skills" /> Technical skills
+        <Icon name="code" type="fas" size="sm" title="Technical skills" /> Technical skills
       </span>
     );
 
     const downPanelTitle = (
       <span>
-        <Icon name="download" type="fas" size="lg" title="Download Resume" /> Resume
+        <Icon name="download" type="fas" size="sm" title="Download Resume" /> Resume
+      </span>
+    );
+
+    const abtmePanelTitle = (
+      <span>
+        <Icon name="user" type="fas" size="sm" title="About me" /> About me
       </span>
     );
 
@@ -87,19 +93,21 @@ class AboutMe extends Component {
             </div>
             <div className="column is-9">
               <div className="bd-notification is-info">
-                
-                <p className="is-size-5">
-                  A passionate software craftsman with a positive practicing approach towards software craftsmanship. 
-                </p>
 
-                <ul className="is-size-5">
-                  <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" />  An astute professional with around ~7 years of experience in application development for web.</li>
-                  <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 2" /> Work experience on enterprise application development with scratch, maintenance, code review,
-                  code refactoring, unit testing, functional testing, build, deployment & troubleshooting issues
-                  related to projects.</li>
-                  <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 3" /> Trainer, mentor, author and tech speaker for JavaScript & Node.js related works.</li>
-                  <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 4" /> Believer, follower and contributor to open source projects/repositories.</li>
-                </ul>
+                <Panel title={abtmePanelTitle}>
+                  <p className="is-size-5">
+                    A passionate software craftsman with a positive practicing approach towards software craftsmanship. 
+                  </p>
+
+                  <ul className="is-size-5">
+                    <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" />  An astute professional with around ~7 years of experience in application development for web.</li>
+                    <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 2" /> Work experience on enterprise application development with scratch, maintenance, code review,
+                    code refactoring, unit testing, functional testing, build, deployment & troubleshooting issues
+                    related to projects.</li>
+                    <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 3" /> Trainer, mentor, author and tech speaker for JavaScript & Node.js related works.</li>
+                    <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 4" /> Believer, follower and contributor to open source projects/repositories.</li>
+                  </ul>
+                </Panel>
 
                 <Panel title={achPanelTitle}>
                   <p className="is-size-5 has-text-link has-text-weight-semibold">Year 2018</p>
