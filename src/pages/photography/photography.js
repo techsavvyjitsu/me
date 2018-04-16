@@ -4,17 +4,34 @@ import Icon from '../../components/icon';
 
 class Photography extends Component {
   render() {
+    const aniPanelTitle = (
+      <span>
+        <Icon name="paw" type="fas" size="sm" title="Animals" /> Animals
+      </span>
+    );
+
+    const birdsPanelTitle = (
+      <span>
+        <Icon name="earlybirds" size="sm" title="Birds" /> Birds
+      </span>
+    );
+
+    const waterPanelTitle = (
+      <span>
+        <Icon name="qq" size="sm" title="Underwater" /> Underwater
+      </span>
+    );
+
     return (
       <section className="photography-component container">
         <p className="is-size-5">
-          In my pursuit of happiness for wildlife and bird photography, I always want to photograph my favourite animals, birds
-          and here is my wishlist.
+          In my pursuit of happiness for wildlife and bird photography, here are some of my favourites:
         </p>
 
         <div className="columns">
           <div className="column">
-            <Panel title="Birds">
-              <ul className="is-size-5">
+            <Panel title={birdsPanelTitle}>
+              <ul className="is-size-6">
                 <li>Owl</li>
                 <li>Macow</li>
                 <li>Parrot</li>
@@ -28,8 +45,8 @@ class Photography extends Component {
           </div>
 
           <div className="column">
-            <Panel title="Land Animals">
-              <ul className="is-size-5">
+            <Panel title={aniPanelTitle}>
+              <ul className="is-size-6">
                 <li>Red Panda</li>
                 <li>Raccoon</li>
                 <li>Meerkats</li>
@@ -43,8 +60,8 @@ class Photography extends Component {
           </div>
 
           <div className="column">
-            <Panel title="Water Animals">
-              <ul className="is-size-5">
+            <Panel title={waterPanelTitle}>
+              <ul className="is-size-6">
                 <li>Whale</li>
                 <li>Proffer Fish</li>
                 <li>Turtle</li>
