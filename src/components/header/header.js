@@ -61,6 +61,7 @@ class Header extends Component {
           <div id="navMenuColordark" className="navbar-menu">
             <div className="navbar-end">
               <Link className="navbar-item" to="aboutme">About me</Link>
+              <Link className="navbar-item" to="photography">My photography</Link>
             </div>
           </div>
         </div>
