@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 // Components
 import Header from './components/header';
 import Footer from './components/footer';
+import ScrollTop from './components/scroll-top';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           {this.props.children}
         </section>
         <Footer />
+        <ScrollTop />
       </div>
     );
   }
