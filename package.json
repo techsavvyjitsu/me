@@ -1,6 +1,6 @@
 {
   "name": "me",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "bulma-carousel": "git+https://github.com/hegdeashwin/bulma-carousel.git#develop",
@@ -12,6 +12,7 @@
     "raf": "3.4.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-grid-gallery": "^0.4.8",
     "react-images": "^0.5.17",
     "react-router-dom": "^4.2.2"
   },
