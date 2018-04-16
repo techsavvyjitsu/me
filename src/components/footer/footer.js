@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import Icon from '../icon';
-import ExtLink from '../extLink';
+import ExtLink from '../ext-link';
 
 class Footer extends Component {
   render() {

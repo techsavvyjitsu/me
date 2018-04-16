@@ -3,7 +3,7 @@ import 'bulma-ext-timeline-css';
 
 import React, { Component } from 'react';
 import Card from '../../components/card';
-import ExtLink from '../../components/extLink';
+import ExtLink from '../../components/ext-link';
 import Icon from '../../components/icon';
 import Panel from '../../components/panel';
 import { TimelineHeader, TimelineContent } from '../../components/timeline';
