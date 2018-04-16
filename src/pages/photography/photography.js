@@ -2,8 +2,47 @@ import './photography.less';
 import React, { Component } from 'react';
 import Panel from '../../components/panel';
 import Icon from '../../components/icon';
+import ExtLink from '../../components/ext-link';
+import { birds, animals, underwater } from './fav-wishlist';
 
 class Photography extends Component {
+  constructor(props) {
+    super(props);
+
+    this.renderList = this.renderList.bind(this);
+    this.renderChildList = this.renderChildList.bind(this);
+  }
+  
+  renderChildList(items) {
+    return items.map((item) => {
+      return (
+        <li>&bull; {item}</li>
+      )
+    });
+  }
+
+  renderList(items) {
+    return items.map((item) => {
+      let category = (
+        <li>&bull; {item.category}</li>
+      );
+
+      if (item.names) {
+        category = (
+          <li>&raquo; {item.category}
+            <ul className="is-size-6">
+              {
+                this.renderChildList(item.names)
+              }
+            </ul>
+          </li>
+        )
+      }
+
+      return category;
+    });
+  }
+  
   render() {
     const aniPanelTitle = (
       <span>
@@ -23,57 +62,48 @@ class Photography extends Component {
       </span>
     );
 
+    const galleryPanelTitle = (
+      <span>
+        <Icon name="qq" size="sm" title="Gallery" /> My Clicks
+      </span>
+    );
+
     return (
       <section className="photography-component">
+        <p className="is-size-5">
+          You can find all my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album.
+          In my pursuit of happiness for wildlife and bird photography, here are some of my favourites under different categories:
+        </p>
 
-        <div claasName="fav-wishlist">
-          <p className="is-size-5">
-            In my pursuit of happiness for wildlife and bird photography, here are some of my favourites:
-          </p>
-
-          <div className="columns">
+        <div className="columns">
+          {
+            birds &&
             <div className="column">
               <Panel title={birdsPanelTitle}>
-                <ul className="is-size-6">
-                  <li>Owl</li>
-                  <li>Macow</li>
-                  <li>Parrot</li>
-                  <li>BeeHumming</li>
-                  <li>Kingfisher</li>
-                  <li>Penguin</li>
-                  <li>Bird-of-paradise</li>
-                  <li>Eagle</li>
-                </ul>
+                <ul className="is-size-6">{this.renderList(birds)}</ul>
               </Panel>
             </div>
+          }
 
+          {
+            animals &&
             <div className="column">
               <Panel title={aniPanelTitle}>
-                <ul className="is-size-6">
-                  <li>Red Panda</li>
-                  <li>Raccoon</li>
-                  <li>Meerkats</li>
-                  <li>Hippopotamus</li>
-                  <li>Rhinoceros</li>
-                  <li>Elephant</li>
-                  <li>Tortoise</li>
-                  <li>Squirrel Monkey</li>
-                </ul>
+                <ul className="is-size-6">{this.renderList(animals)}</ul>
               </Panel>
             </div>
+          }
 
+          {
+            underwater &&
             <div className="column">
               <Panel title={waterPanelTitle}>
-                <ul className="is-size-6">
-                  <li>Whale</li>
-                  <li>Proffer Fish</li>
-                  <li>Turtle</li>
-                </ul>
+                <ul className="is-size-6">{this.renderList(underwater)}</ul>
               </Panel>
             </div>
-          </div>
+          }
         </div>
-
+        
       </section>
     );
   }
