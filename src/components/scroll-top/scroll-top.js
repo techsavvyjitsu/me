@@ -37,7 +37,7 @@ class ScrollTop extends Component {
   render() {
     return ( 
       <button ref="scroll" style={{display:'none'}} className="scroll-top-component button is-primary has-text-black-bis" onClick={this.scrollTop} title="Scroll to top of this page">
-        <Icon name="angle-up" type="fas" classes="" size="lg" />
+        <Icon name="angle-up" type="fas" classes="" size="lg" /> Scroll Top
       </button>
     );
   }
