@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className="app-component">
         <Header />
-        <section className="main-section container">
+        <section className="main-section">
           {this.props.children}
         </section>
         <Footer />

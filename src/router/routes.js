@@ -1,9 +1,4 @@
 import React from 'react';
-// import { 
-//   HashRouter,
-//   Route,
-//   Switch
-// } from 'react-router-dom';
 import { Router, Route, IndexRoute, useRouterHistory, IndexRedirect } from 'react-router';
 import { createHashHistory } from 'history';
 
@@ -19,21 +14,6 @@ import Donations from '../pages/donations';
 import Error from '../pages/error';
 
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
-
-// Construct application routes
-// const Routes = (
-//   <HashRouter>
-//     <App>
-//       <Switch>
-//         <Route exact path = "/" component = {Home} />
-//         <Route exact path = "/aboutme" component = {AboutMe} />
-//         <Route exact path = "/hobby/:hobby" component = {Hobby} />
-        
-//         <Route component={Error} />
-//       </Switch>
-//     </App>
-//   </HashRouter>
-// );
 
 const Routes = (
   <Router history={appHistory}>

@@ -55,7 +55,7 @@ class AboutMe extends Component {
     );
 
     return (  
-      <section className="about-me-component">
+      <section className="about-me-component container">
         
         <div className="container">
           <div className="columns">
