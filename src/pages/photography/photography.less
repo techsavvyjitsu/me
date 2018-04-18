@@ -1,9 +1,23 @@
-.photography-component {
-  padding: 30px 0;
+// Variables
+@listBorderColor: #b5b5b5;
+@parentListBg: #f5f5f5;
 
+// styles
+.photography-component {
   p {
     margin-bottom: 10px;
   }
+
+  .parent-list {
+    width: 100%;
+
+    li {
+      padding: 5px;
+      background-color: @parentListBg;
+      border-bottom: 1px dotted @listBorderColor;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 768px) {

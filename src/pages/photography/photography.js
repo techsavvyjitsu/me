@@ -16,7 +16,7 @@ class Photography extends Component {
   renderChildList(items) {
     return items.map((item) => {
       return (
-        <li>&bull; {item}</li>
+        <li className="has-background-white-ter">{item}</li>
       )
     });
   }
@@ -24,13 +24,15 @@ class Photography extends Component {
   renderList(items) {
     return items.map((item) => {
       let category = (
-        <li>&bull; {item.category}</li>
+        <li className="has-background-grey-lighter">
+          <ExtLink linkTo={item.linkTo}>{item.category}</ExtLink>
+        </li>
       );
 
       if (item.names) {
         category = (
-          <li>&raquo; {item.category}
-            <ul className="is-size-6">
+          <li>{item.category}
+            <ul className="is-size-6 child-list">
               {
                 this.renderChildList(item.names)
               }
@@ -62,17 +64,14 @@ class Photography extends Component {
       </span>
     );
 
-    const galleryPanelTitle = (
-      <span>
-        <Icon name="qq" size="sm" title="Gallery" /> My Clicks
-      </span>
-    );
-
     return (
       <section className="photography-component">
         <p className="is-size-5">
-          You can find all my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album.
-          In my pursuit of happiness for wildlife and bird photography, here are some of my favourites under different categories:
+          In my pursuit of happiness for wildlife and bird photography, here are some of my favourites in different categories.
+        </p>
+        
+        <p className="is-size-5">
+          Also, find all my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album.
         </p>
 
         <div className="columns">
@@ -80,7 +79,7 @@ class Photography extends Component {
             birds &&
             <div className="column">
               <Panel title={birdsPanelTitle}>
-                <ul className="is-size-6">{this.renderList(birds)}</ul>
+                <ul className="is-size-6 parent-list">{this.renderList(birds)}</ul>
               </Panel>
             </div>
           }
@@ -89,7 +88,7 @@ class Photography extends Component {
             animals &&
             <div className="column">
               <Panel title={aniPanelTitle}>
-                <ul className="is-size-6">{this.renderList(animals)}</ul>
+                <ul className="is-size-6 parent-list">{this.renderList(animals)}</ul>
               </Panel>
             </div>
           }
@@ -98,12 +97,11 @@ class Photography extends Component {
             underwater &&
             <div className="column">
               <Panel title={waterPanelTitle}>
-                <ul className="is-size-6">{this.renderList(underwater)}</ul>
+                <ul className="is-size-6 parent-list">{this.renderList(underwater)}</ul>
               </Panel>
             </div>
           }
         </div>
-        
       </section>
     );
   }

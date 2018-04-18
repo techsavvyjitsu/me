@@ -1,5 +1,6 @@
 import './header.less';
 import React, { Component } from 'react';
+import Icon from '../../components/icon';
 import { Link } from 'react-router-dom';
 import selfPic from '../../assets/imgs/self.jpeg';
 
@@ -60,8 +61,8 @@ class Header extends Component {
 
           <div id="navMenuColordark" className="navbar-menu">
             <div className="navbar-end">
-              <Link className="navbar-item" to="aboutme">About me</Link>
-              <Link className="navbar-item" to="photography">My photography</Link>
+              <Link className="navbar-item" to="aboutme"><Icon name="user" type="fas" size="sm" title="Animals" />&nbsp;About</Link>
+              <Link className="navbar-item" to="hoddy/photography"><Icon name="camera" type="fas" size="sm" title="Animals" />&nbsp;Hobbies</Link>
             </div>
           </div>
         </div>

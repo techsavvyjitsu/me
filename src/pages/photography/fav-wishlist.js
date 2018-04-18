@@ -1,65 +1,80 @@
 module.exports = {
   "birds": [
     {
-      "category": "Owl"
+      "category": "Owl",
+      "linkTo": "https://en.wikipedia.org/wiki/Owl"
     },
     {
-      "category": "Macow"
+      "category": "Macaw",
+      "linkTo": "https://en.wikipedia.org/wiki/Macaw"
     },
     {
-      "category": "Parrot"
+      "category": "Parrot",
+      "linkTo": "https://en.wikipedia.org/wiki/Parrot"
     },
     {
-      "category": "BeeHumming"
+      "category": "BeeHumming",
+      "linkTo": "https://en.wikipedia.org/wiki/Bee_hummingbird"
     },
     {
-      "category": "Kingfisher"
+      "category": "Kingfisher",
+      "linkTo": "https://en.wikipedia.org/wiki/Kingfisher"
     },
     {
-      "category": "Penguin"
+      "category": "Penguin",
+      "linkTo": "https://en.wikipedia.org/wiki/Penguin"
     },
     {
-      "category": "Bird-of-paradise"
+      "category": "Bird-of-paradise",
+      "linkTo": "https://en.wikipedia.org/wiki/Bird-of-paradise"
     },
     {
-      "category": "Eagle"
+      "category": "Eagle",
+      "linkTo": "https://en.wikipedia.org/wiki/Eagle"
     }
   ],
   "animals": [
     {
-      "category": "Red Panda"
+      "category": "Red Panda",
+      "linkTo": "https://en.wikipedia.org/wiki/Red_panda"
     },
     {
-      "category": "Raccoon"
+      "category": "Raccoon",
+      "linkTo": "https://en.wikipedia.org/wiki/Raccoon"
     },
     {
-      "category": "Meerkats"
+      "category": "Meerkats",
+      "linkTo": "https://en.wikipedia.org/wiki/Meerkat"
     },
     {
-      "category": "Hippopotamus"
+      "category": "Hippopotamus",
+      "linkTo": "https://en.wikipedia.org/wiki/Hippopotamus"
     },
     {
-      "category": "Rhinoceros"
+      "category": "Rhinoceros",
+      "linkTo": "https://en.wikipedia.org/wiki/Rhinoceros"
     },
     {
-      "category": "Elephant"
+      "category": "Elephant",
+      "linkTo": "https://en.wikipedia.org/wiki/Elephant"
     },
     {
-      "category": "Tortoise"
+      "category": "Tortoise",
+      "linkTo": "https://en.wikipedia.org/wiki/Tortoise"
     },
     {
-      "category": "Squirrel Monkey"
+      "category": "Squirrel",
+      "linkTo": "https://en.wikipedia.org/wiki/Squirrel"
     }
   ],
   "underwater": [
     {
-      "category": "Whale"
+      "category": "Whale",
+      "linkTo": "https://en.wikipedia.org/wiki/Whale"
     },
     {
-      "category": "Proffer Fish"
-    },
-    {
-      "category": "Turtle"
+      "category": "Turtle",
+      "linkTo": "https://en.wikipedia.org/wiki/Turtle"
     }
   ]
 }
