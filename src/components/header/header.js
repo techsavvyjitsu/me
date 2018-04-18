@@ -1,7 +1,7 @@
 import './header.less';
 import React, { Component } from 'react';
 import Icon from '../../components/icon';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import selfPic from '../../assets/imgs/self.jpeg';
 
 class Header extends Component {
@@ -49,7 +49,7 @@ class Header extends Component {
         <div className="container">
           <div className="navbar-brand">
 
-            <Link className="navbar-item" to="">
+            <Link className="navbar-item" to="/">
               <img src={selfPic} alt="Hello World! I am Ashwin, Welcome to my website" /> <strong>Hello World!</strong>
             </Link>
             <div className="navbar-burger burger" data-target="navMenuColordark">
@@ -61,8 +61,8 @@ class Header extends Component {
 
           <div id="navMenuColordark" className="navbar-menu">
             <div className="navbar-end">
-              <Link className="navbar-item" to="aboutme"><Icon name="user" type="fas" size="sm" title="Animals" />&nbsp;About</Link>
-              <Link className="navbar-item" to="hobby/photography"><Icon name="camera" type="fas" size="sm" title="Animals" />&nbsp;Hobbies</Link>
+              <Link className="navbar-item" to="/aboutme"><Icon name="user" type="fas" size="sm" title="Animals" />&nbsp;About</Link>
+              <Link className="navbar-item" to="/hobby/photography"><Icon name="camera" type="fas" size="sm" title="Animals" />&nbsp;Hobbies</Link>
             </div>
           </div>
         </div>
