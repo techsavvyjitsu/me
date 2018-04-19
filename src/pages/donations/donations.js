@@ -30,12 +30,12 @@ class Donations extends Component {
       <section className="donations-component">
         <Panel title="NLWS - Northern Lights Wildlife Shelter">
           <div className="rows">
-            <div className="column is-12">
-              <YouTube width="490" height="280" embedId="tPZzaPeZutw" />
-            </div>
-            <div className="column is-12">
-              <h2>Visit Websites:</h2>
+            <div className="row">
+              <p className="website is-size-6">Visit Website: </p>
               <ul className="is-12 is-size-6 parent-list">{this.renderList(orgs)}</ul>
+            </div>
+            <div className="row">
+              <YouTube embedId="tPZzaPeZutw" />
             </div>
           </div>
         </Panel>

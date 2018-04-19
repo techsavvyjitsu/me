@@ -1,21 +1,23 @@
+import './youtube.less';
 import React, { Component } from 'react';
 
 class YouTube extends Component {
   render() {
     const {
-      width,
-      height,
       embedId
     } = this.props;
 
     const src = `https://www.youtube.com/embed/${embedId}?enablejsapi=1`;
 
     return (
-      <iframe className="youtube-component" id="player" type="text/html"
-        width={width}
-        height={height}
-        src={src}
-        frameborder="0" />
+      <div className="youtube-component">
+        <iframe id="player" type="text/html"
+          width="100%"
+          height="100%"
+          title={embedId}
+          src={src}
+          frameBorder="0" />
+      </div>
     );
   }
 }
