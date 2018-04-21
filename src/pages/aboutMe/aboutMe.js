@@ -114,6 +114,7 @@ class AboutMe extends Component {
                       <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="User’s experience" /> Users experience.
                     </li>
                   </ul>
+                  <br/>
 
                   <p className="is-size-5">
                     An astute professional with around ~7 years of experience in application development from scratch, maintenance, 
