@@ -20,7 +20,7 @@ class AboutMe extends Component {
 
     const achPanelTitle = (
       <span>
-        <Icon name="trophy" type="fas" size="sm" title="Achievements" /> Achievements
+        <Icon name="trophy" type="fas" size="sm" title="Achievements" /> Achievements (besides daily sprint work)
       </span>
     );
 
@@ -96,44 +96,122 @@ class AboutMe extends Component {
 
                 <Panel title={abtmePanelTitle}>
                   <p className="is-size-5">
-                    A passionate software craftsman with a positive practicing approach towards software craftsmanship. 
+                    A passionate software craftsman with a positive practicing approach towards software craftsmanship.
+                  </p>
+                  <br/>
+                  <p className="is-size-5">
+                    Experience in software development that focus on:
                   </p>
 
                   <ul className="is-size-5">
-                    <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" />  An astute professional with around ~7 years of experience in application development for web.</li>
-                    <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 2" /> Work experience on enterprise application development with scratch, maintenance, code review,
-                    code refactoring, unit testing, functional testing, build, deployment & troubleshooting issues
-                    related to projects.</li>
-                    <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 3" /> Trainer, mentor, author and tech speaker for JavaScript & Node.js related works.</li>
-                    <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 4" /> Believer, follower and contributor to open source projects/repositories.</li>
+                    <li>
+                      <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Business Requirements" /> Business Requirements.
+                    </li>
+                    <li>
+                      <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Improve developer’s experience, tools and utilities" /> Improve developers experience, tools and utilities.
+                    </li>
+                    <li>
+                      <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="User’s experience" /> Users experience.
+                    </li>
                   </ul>
+
+                  <p className="is-size-5">
+                    An astute professional with around ~7 years of experience in application development from scratch, maintenance, 
+                    code review and refactoring, unit and functional testing, build, deployment & troubleshooting issues related to projects.
+                  </p>
+                  <br/>
+
+                  <p className="is-size-5">
+                    Author, Tech Speaker, Trainer and Mentor.
+                  </p>
+                  <br/>
+
+                  <p className="is-size-5">
+                    Believer, follower and contributor to open source projects/repositories.
+                  </p>
                 </Panel>
 
                 <Panel title={achPanelTitle}>
-                  <p className="is-size-5 has-text-link has-text-weight-semibold">Year 2018</p>
+                  <p className="year-title is-size-5 has-text-link has-text-weight-semibold">Year 2018</p>
                   <ul className="is-size-5">
                     <li>
-                      Speaker in internal JS conferences (Upcoming)
+                      Tech speaker in sessions/meetups/conferences (upcoming): 
                       <ul>
-                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on DevTools on GraphQL</li>
-                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on GraphQL Clients</li>
+                        <li>
+                          <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="GraphQL - A new API query language" /> GraphQL - A new API query language.
+                          <span className="tag is-light">
+                            <ExtLink linkTo="https://jsfoo.talkfunnel.com/2018/77-graphql-a-new-api-query-language">Click here to vote</ExtLink>
+                          </span>
+                        </li>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="DevTools for GraphQL" /> DevTools for GraphQL.</li>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Compare GraphQL Clients" /> Compare GraphQL Clients.</li>
                       </ul>
                     </li>
                     <li>
-                      Reviewer and Author
+                      Became reviewer and author for Packt publishing
                       <ul>
-                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> for Packt Publications</li>
+                        <li>
+                          <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Hands-on GraphQL for Better RESTful Web Services" /> Hands-on GraphQL for Better RESTful Web Services.
+                          <span className="tag is-light">
+                            <ExtLink linkTo="https://www.packtpub.com/application-development/hands-graphql-better-restful-web-services-video">Click here to purchase videos</ExtLink>
+                          </span>
+                        </li>
                       </ul>
                     </li>
                   </ul>
-                  <p className="is-size-5 has-text-link has-text-weight-semibold">Year 2017</p>
+                  <p className="year-title is-size-5 has-text-link has-text-weight-semibold">Year 2017</p>
                   <ul className="is-size-5">
                     <li>
-                      Speaker in internal JS conferences
+                      Became tech speaker in internal JavaScript sessions/meetups/conferences at PayPal. Below are few topics which I covered:
                       <ul>
-                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on GraphQL</li>
-                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on NativeScript</li>
-                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Point 1" /> on WebAssembly</li>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Write better RESTful services using GraphQL" /> Write better RESTful services using GraphQL.</li>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Introduction to NativeScript" /> Introduction to NativeScript.</li>
+                        <li><Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Introduction to WebAssembly" /> Introduction to WebAssembly.</li>  
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <p className="year-title is-size-5 has-text-link has-text-weight-semibold">Year 2013 - 2016</p>
+                  <ul className="is-size-5">
+                    <li>
+                      Became internal trainer and mentor at Cybage software. Below are few topics which I covered:
+                      <ul>
+                        <li>
+                          <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Learn Backbone to structure your application" /> Learn Backbone to structure your application.
+                          <span className="tag is-light">
+                            <ExtLink linkTo="https://github.com/hegdeashwin/Backbone">Click here to see online notes</ExtLink>
+                          </span>
+                        </li>
+                        <li>
+                          <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Learn Marionette to structure your Backbone views" /> Learn Marionette to structure your Backbone views.
+                          <span className="tag is-light">
+                            <ExtLink linkTo="https://github.com/hegdeashwin/learning-backbone-marionette">Click here to see online notes</ExtLink>
+                          </span>
+                        </li>
+                        <li>
+                          <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Webpack for bundling your JavaScript web apps" /> Webpack for bundling your JavaScript web apps.
+                          <span className="tag is-light">
+                            <ExtLink linkTo="https://github.com/Code-by-practice/learning-webpack">Click here to see online notes</ExtLink>
+                          </span>
+                        </li>
+                        <li>
+                          <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Require.js for your JavaScript web apps" /> Require.js for your JavaScript web apps.
+                          <span className="tag is-light">
+                            <ExtLink linkTo="https://github.com/Code-by-practice/learning-requirejs">Click here to see online notes</ExtLink>
+                          </span>
+                        </li>
+                        <li>
+                          <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Task runners for JavaScript web apps" /> Task runners for your JavaScript web apps.
+                          <span className="tag is-light">
+                            <ExtLink linkTo="https://github.com/Code-by-practice/learning-js-taskrunners">Click here to see online notes</ExtLink>
+                          </span>
+                        </li>
+                        <li>
+                          <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Templating with Handlebars" /> Templating with Handlebars.
+                          <span className="tag is-light">
+                            <ExtLink linkTo="https://github.com/Code-by-practice/learning-handlebars">Click here to see online notes</ExtLink>
+                          </span>
+                        </li>
                       </ul>
                     </li>
                   </ul>
