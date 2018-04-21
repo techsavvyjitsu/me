@@ -44,7 +44,11 @@ class Footer extends Component {
           <hr />
           <div className="content has-text-centered">
             <p>
-              This website is developed and maintained with <i className="fas fa-heart fa-lg" /> by <Link to="#">Ashwin Hegde</Link>.
+              This website is developed and maintained with <Icon name="heart" size="lg" type="fas"/> by <Link to="#">Ashwin Hegde</Link> and supports on <Icon name="chrome" size="lg" type="fab" title="Support on Google Chrome"/>&nbsp;
+              <Icon name="firefox" size="lg" type="fab" title="Support on Mozilla Firefox"/>&nbsp;
+              <Icon name="safari" size="lg" type="fab" title="Support on Apple Safari MacOS"/>&nbsp;
+              <Icon name="internet-explorer" size="lg" type="fab" title="Support on Microsoft Internet Explore 11 or above"/>&nbsp;
+              <Icon name="edge" size="lg" type="fab" title="Support on Microsoft Edge"/>&nbsp;
             </p>
             <p>
               The source code is licensed <ExtLink linkTo="http://opensource.org/licenses/mit-license.php">MIT</ExtLink>. The website content
