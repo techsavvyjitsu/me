@@ -63,8 +63,20 @@ module.exports = {
       "linkTo": "https://en.wikipedia.org/wiki/Tortoise"
     },
     {
-      "category": "Squirrel",
-      "linkTo": "https://en.wikipedia.org/wiki/Squirrel"
+      "category": "Grey Squirrel",
+      "linkTo": "https://en.wikipedia.org/wiki/Eastern_gray_squirrel"
+    },
+    {
+      "category": "Artic Ground Squirrel",
+      "linkTo": "https://en.wikipedia.org/wiki/Arctic_ground_squirrel"
+    },
+    {
+      "category": "Artic Fox",
+      "linkTo": "https://en.wikipedia.org/wiki/Arctic_ground_squirrel"
+    },
+    {
+      "category": "Red Fox",
+      "linkTo": "https://en.wikipedia.org/wiki/Red_fox"
     }
   ],
   "underwater": [
