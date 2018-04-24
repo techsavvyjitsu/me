@@ -264,6 +264,9 @@ class AboutMe extends Component {
                       <span className="tag is-medium is-primary">Start</span>
                     </TimelineHeader>
                   </div>
+
+                  <br/>
+                  <p>Note - year indicates range from start to end</p>
                 </Panel>
 
                 <Panel title={skillsPanelTitle}>
@@ -307,7 +310,7 @@ class AboutMe extends Component {
                     <TimelineHeader>
                       <span className="tag is-primary">2012</span>
                     </TimelineHeader>
-                    <TimelineContent tag="April 2017 - Present">
+                    <TimelineContent>
                       <p><strong>M.C.A.</strong> - Master of Computer Application</p>
                       <p>University of Pune, Pune, India</p>
                     </TimelineContent>
@@ -315,7 +318,7 @@ class AboutMe extends Component {
                     <TimelineHeader>
                       <span className="tag is-primary">2009</span>
                     </TimelineHeader>
-                    <TimelineContent tag="April 2017 - Present">
+                    <TimelineContent>
                       <p><strong>B.C.A.</strong> - Bachelor of Computer Application</p>
                       <p>Veer Narmad South Gujarat University, Surat, India</p>
                     </TimelineContent>
@@ -323,14 +326,14 @@ class AboutMe extends Component {
                     <TimelineHeader>
                       <span className="tag is-primary">2006</span>
                     </TimelineHeader>
-                    <TimelineContent tag="April 2017 - Present">
+                    <TimelineContent>
                       <p><strong>12<sup>th</sup> Science</strong> - G.S.H.S.E. Board, Gandhinagar, India</p>
                     </TimelineContent>
                     
                     <TimelineHeader>
                       <span className="tag is-primary">2004</span>
                     </TimelineHeader>
-                    <TimelineContent tag="April 2017 - Present">
+                    <TimelineContent>
                       <p><strong>10<sup>th</sup> Science</strong> - G.S.H.S.E. Board, Gandhinagar, India</p>
                     </TimelineContent>
                     
@@ -338,6 +341,9 @@ class AboutMe extends Component {
                       <span className="tag is-medium is-primary">Start</span>
                     </TimelineHeader>
                   </div>
+                    
+                  <br/>
+                  <p>Note - year indicates the course completion year</p>
                 </Panel>
 
               </div>

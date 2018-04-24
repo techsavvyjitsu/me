@@ -1,3 +1,4 @@
+import './timelineContent.less';
 import React, { Component } from 'react';
 
 class TimelineContent extends Component {
