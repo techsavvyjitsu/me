@@ -1,4 +1,4 @@
-import './aboutMe.less';
+import './about-me.less';
 import 'bulma-ext-timeline-css';
 
 import React, { Component } from 'react';

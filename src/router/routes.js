@@ -7,7 +7,7 @@ import App from '../App';
 
 // Import page level components
 import Home from '../pages/home';
-import AboutMe from '../pages/aboutMe';
+import AboutMe from '../pages/about-me';
 import Hobby from '../pages/hobby';
 import Photography from '../pages/photography';
 import Donations from '../pages/donations';
