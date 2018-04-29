@@ -17,7 +17,7 @@ import Projects from '../pages/projects';
 import Articles from '../pages/articles';
 import Error from '../pages/error';
 
-const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
+const appHistory = useRouterHistory(createHashHistory)();
 
 const Routes = (
   <Router history={appHistory}>

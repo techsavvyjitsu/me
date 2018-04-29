@@ -16,11 +16,11 @@ class CardMedia extends Component {
   
   renderMap(source, width, height) {
     const url = `https://www.google.com/maps/embed?pb=${source}?enablejsapi=1`;
-
+    
     return (
       <div className="card-map">
         <figure className="image">
-          <iframe title={source} width={width} height={height} src={url} frameborder="0" style={{border: 0}} />
+          <iframe title={source} width={width} height={height} src={url} frameBorder="0" style={{border: 0}} />
         </figure>
       </div>
     )
@@ -30,7 +30,7 @@ class CardMedia extends Component {
     return (
       <div className="card-video">
         <figure className="image">
-          <iframe title={source} width={width} height={height} src={source} frameborder="0" style={{border: 0}} />
+          <iframe title={source} width={width} height={height} src={source} frameBorder="0" style={{border: 0}} />
         </figure>
       </div>
     )
