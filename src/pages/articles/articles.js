@@ -1,6 +1,6 @@
 // Packages
 import React, { Component } from 'react';
-import { Card, CardMedia, CardContent } from '../../components/new-card';
+import { Card, CardMedia, CardContent } from '../../components/card';
 import ExtLink from '../../components/ext-link';
 import Message from '../../components/message';
 import Icon from '../../components/icon';

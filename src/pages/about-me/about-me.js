@@ -2,7 +2,7 @@ import './about-me.less';
 import 'bulma-ext-timeline-css';
 
 import React, { Component } from 'react';
-import { Card, CardMedia, CardContent } from '../../components/new-card';
+import { Card, CardMedia, CardContent } from '../../components/card';
 import ExtLink from '../../components/ext-link';
 import Icon from '../../components/icon';
 import Panel from '../../components/panel';
