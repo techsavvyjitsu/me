@@ -12,6 +12,9 @@ import Hobby from '../pages/hobby';
 import Photography from '../pages/photography';
 import Donations from '../pages/donations';
 import Visits from '../pages/visits';
+import Work from '../pages/work';
+import Projects from '../pages/projects';
+import Articles from '../pages/articles';
 import Error from '../pages/error';
 
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
@@ -26,6 +29,11 @@ const Routes = (
         <Route path = "photography" component = {Photography} />
         <Route path = "donations" component = {Donations} />
         <Route path = "visits" component = {Visits} />
+      </Route>
+      <Route path = "work" component = {Work}>
+        <IndexRedirect to="/work/projects" />
+        <Route path = "projects" component = {Projects} />
+        <Route path = "articles" component = {Articles} />
       </Route>
     </Route>
     <Route path="*" component={Error}/>

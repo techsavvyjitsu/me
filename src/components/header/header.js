@@ -61,8 +61,9 @@ class Header extends Component {
 
           <div id="navMenuColordark" className="navbar-menu">
             <div className="navbar-end">
-              <Link className="navbar-item" to="/aboutme"><Icon name="user" type="fas" size="sm" title="Animals" />&nbsp;About</Link>
-              <Link className="navbar-item" to="/hobby/photography"><Icon name="camera" type="fas" size="sm" title="Animals" />&nbsp;Hobbies</Link>
+              <Link className="navbar-item" to="/aboutme"><Icon name="user" type="fas" size="sm" title="About" />&nbsp;About</Link>
+              <Link className="navbar-item" to="/work/projects"><Icon name="briefcase" type="fas" size="sm" title="Works" />&nbsp;Work</Link>
+              <Link className="navbar-item" to="/hobby/photography"><Icon name="camera" type="fas" size="sm" title="Hobbies" />&nbsp;Hobbies</Link>
             </div>
           </div>
         </div>
