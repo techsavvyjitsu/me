@@ -2,7 +2,7 @@ import './about-me.less';
 import 'bulma-ext-timeline-css';
 
 import React, { Component } from 'react';
-import Card from '../../components/card';
+import { Card, CardMedia, CardContent } from '../../components/card';
 import ExtLink from '../../components/ext-link';
 import Icon from '../../components/icon';
 import Panel from '../../components/panel';
@@ -62,31 +62,33 @@ class AboutMe extends Component {
             <div className="column is-3">
               <div className="is-primary">
                 <Card
-                  img={selfImg}
                   title="Ashwin Hegde"
-                  subTitle="Software Engineer and Craftsman, Open Source, JavaScript Engineer, Love amateur wildlife, birds, landscape and nature Photography, Foodie, ..."
-                  hasThumbnail={false}
-                >
-                  <Panel title={langPanelTitle}>
-                    <p><strong>English</strong> - Professional Proficiency</p>
-                    <p><strong>Kanada</strong> - Mother Tongue</p>
-                    <p><strong>Hindi</strong> - Fluent</p>
-                    <p><strong>Gujarat</strong> - Fluent</p>
-                    <p><strong>Marathi</strong> - Limited</p>
-                    <p><strong>Tamil</strong> - Learning</p>
-                    <p><strong>Spanish</strong> - Learning</p>
-                  </Panel>
+                  subTitle="Software Engineer and Craftsman, Open Source, JavaScript Engineer, Love amateur wildlife, birds, landscape and nature Photography, Foodie, ...">
+                  
+                  <CardMedia source={selfImg} alt="Profile Picture" />
 
-                  <Panel title={downPanelTitle}>
-                    <div className="buttons">
-                      <ExtLink linkTo="https://www.linkedin.com/in/hegdeashwin/" classes="button is-warning">
-                        PDF
-                      </ExtLink>
-                      <ExtLink linkTo="https://www.linkedin.com/in/hegdeashwin/" classes="button is-warning">
-                        Plain Text
-                      </ExtLink>
-                    </div>
-                  </Panel>
+                  <CardContent>
+                    <Panel title={langPanelTitle}>
+                      <p><strong>English</strong> - Professional Proficiency</p>
+                      <p><strong>Kanada</strong> - Mother Tongue</p>
+                      <p><strong>Hindi</strong> - Fluent</p>
+                      <p><strong>Gujarat</strong> - Fluent</p>
+                      <p><strong>Marathi</strong> - Limited</p>
+                      <p><strong>Tamil</strong> - Learning</p>
+                      <p><strong>Spanish</strong> - Learning</p>
+                    </Panel>
+
+                    <Panel title={downPanelTitle}>
+                      <div className="buttons">
+                        <ExtLink linkTo="https://www.linkedin.com/in/hegdeashwin/" classes="button is-warning">
+                          PDF
+                        </ExtLink>
+                        <ExtLink linkTo="https://www.linkedin.com/in/hegdeashwin/" classes="button is-warning">
+                          Plain Text
+                        </ExtLink>
+                      </div>
+                    </Panel>
+                  </CardContent>
                 </Card>
               </div>
 
