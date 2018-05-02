@@ -21,6 +21,9 @@ class Footer extends Component {
               <ExtLink linkTo="https://www.instagram.com/ashwin.hegde3/" classes="social-icon instagram">
                 <Icon name="instagram" size="2x" title="Follow me on Instagram" />
               </ExtLink>
+              <ExtLink linkTo="https://medium.com/@hegdeashwin" classes="social-icon github">
+                <Icon name="medium" size="2x" title="Clap on Medium" />
+              </ExtLink>
               <ExtLink linkTo="https://www.youtube.com/channel/UCQHsDMLPAkQhXx26ofphqYQ" classes="social-icon youtube">
                 <Icon name="youtube" size="2x" title="Subscribe to my YouTube channel" />
               </ExtLink>
@@ -44,11 +47,15 @@ class Footer extends Component {
           <hr />
           <div className="content has-text-centered">
             <p>
-              This website is developed and maintained with <Icon name="heart" size="lg" type="fas"/> by <Link to="#">Ashwin Hegde</Link> and supports on <Icon name="chrome" size="lg" type="fab" title="Support on Google Chrome"/>&nbsp;
+              This website is developed and maintained with <Icon name="heart" size="lg" type="fas"/> by <Link to="#">Ashwin Hegde</Link><br/> and supports&nbsp;
+              <Icon name="chrome" size="lg" type="fab" title="Support on Google Chrome"/>&nbsp;
               <Icon name="firefox" size="lg" type="fab" title="Support on Mozilla Firefox"/>&nbsp;
               <Icon name="safari" size="lg" type="fab" title="Support on Apple Safari MacOS"/>&nbsp;
               <Icon name="internet-explorer" size="lg" type="fab" title="Support on Microsoft Internet Explore 11 or above"/>&nbsp;
-              <Icon name="edge" size="lg" type="fab" title="Support on Microsoft Edge"/>&nbsp;
+              <Icon name="edge" size="lg" type="fab" title="Support on Microsoft Edge"/>&nbsp; browsers on&nbsp;
+              <Icon name="mobile-alt" size="lg" type="fas" title="Support on mobile"/>&nbsp;
+              <Icon name="tablet-alt" size="lg" type="fas" title="Support on tabs"/>&nbsp;
+              <Icon name="desktop" size="lg" type="fas" title="Support on desktop"/>&nbsp; devices
             </p>
             <p>
               The source code is licensed <ExtLink linkTo="http://opensource.org/licenses/mit-license.php">MIT</ExtLink>. The website content
