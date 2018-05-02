@@ -61,13 +61,14 @@ class AboutMe extends Component {
           <div className="columns">
             <div className="column is-3">
               <div className="is-primary">
-                <Card
-                  title="Ashwin Hegde"
-                  subTitle="Software Engineer and Craftsman, Open Source, JavaScript Engineer, Love amateur wildlife, birds, landscape and nature Photography, Foodie, ...">
+                <Card>
                   
                   <CardMedia source={selfImg} alt="Profile Picture" />
 
-                  <CardContent>
+                  <CardContent
+                    title="Ashwin Hegde"
+                    subTitle="Software Engineer and Craftsman, Open Source, JavaScript Engineer, Love amateur wildlife, birds, landscape and nature Photography, Foodie, ...">
+                  
                     <Panel title={langPanelTitle}>
                       <p><strong>English</strong> - Professional Proficiency</p>
                       <p><strong>Kanada</strong> - Mother Tongue</p>
