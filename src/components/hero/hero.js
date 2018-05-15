@@ -12,13 +12,10 @@ class Hero extends Component {
           <div className="hero-carousel carousel-animated carousel-animate-fade" data-autoplay="true">
             <div className='carousel-container'>
               <div className='carousel-item has-background is-active'>
-                <img className="is-background" src="https://res.cloudinary.com/hegdeashwin/image/upload/s--P_epaRUc--/v1523201463/slider_img_5.jpg" alt="" />
+                <img className="is-background" src="https://res.cloudinary.com/hegdeashwin/image/upload/s--AXN_jR2P--/v1523201462/slider_img_2.jpg" alt="" />
               </div>
               <div className='carousel-item has-background'>
                 <img className="is-background" src="https://res.cloudinary.com/hegdeashwin/image/upload/s--oQuUHqkc--/v1523201463/slider_img_3.jpg" alt="" />
-              </div>
-              <div className='carousel-item has-background'>
-                <img className="is-background" src="https://res.cloudinary.com/hegdeashwin/image/upload/s--AXN_jR2P--/v1523201462/slider_img_2.jpg" alt="" />
               </div>
               <div className='carousel-item has-background'>
                 <img className="is-background" src="https://res.cloudinary.com/hegdeashwin/image/upload/s--9Ih67kon--/v1523201462/slider_img_1.jpg" alt="" />

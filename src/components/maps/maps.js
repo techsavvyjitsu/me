@@ -18,7 +18,7 @@ class Maps extends Component {
       <div className="maps maps-component">
         <div className="maps-image">
           <figure className="image">
-            <iframe width={width} height={height} src={url} frameborder="0" style={{border: 0}} />
+            <iframe width={width} height={height} src={url} frameBorder="0" style={{border: 0}} />
           </figure>
         </div>
         <div className="maps-content">
