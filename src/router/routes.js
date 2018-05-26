@@ -14,7 +14,11 @@ import Donations from '../pages/donations';
 import Visits from '../pages/visits';
 import Work from '../pages/work';
 import Projects from '../pages/projects';
-import Articles from '../pages/articles';
+import Training from '../pages/training';
+import TechArticles from '../pages/tech-articles';
+import TravelArticles from '../pages/travel-articles';
+import Videos from '../pages/videos';
+import Slides from '../pages/slides';
 import Error from '../pages/error';
 
 const appHistory = useRouterHistory(createHashHistory)();
@@ -24,16 +28,21 @@ const Routes = (
     <Route path = "/" component = {App}>
       <IndexRoute component = {Home} />
       <Route path = "aboutme" component = {AboutMe} />
+
+      <Route path = "work" component = {Work}>
+        <Route path = "projects" component = {Projects} />
+        <Route path = "training" component = {Training} />
+        <Route path = "articles" component = {TechArticles} />
+        <Route path = "videos" component = {Videos} />
+        <Route path = "slides" component = {Slides} />
+      </Route>
+
       <Route path = "hobby" component = {Hobby}>
         <IndexRedirect to="/hobby/photography" />
         <Route path = "photography" component = {Photography} />
         <Route path = "donations" component = {Donations} />
         <Route path = "visits" component = {Visits} />
-      </Route>
-      <Route path = "work" component = {Work}>
-        <IndexRedirect to="/work/projects" />
-        <Route path = "projects" component = {Projects} />
-        <Route path = "articles" component = {Articles} />
+        <Route path = "articles" component = {TravelArticles} />
       </Route>
     </Route>
     <Route path="*" component={Error}/>

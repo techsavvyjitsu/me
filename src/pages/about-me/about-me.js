@@ -44,7 +44,7 @@ class AboutMe extends Component {
 
     const downPanelTitle = (
       <span>
-        <Icon name="download" type="fas" size="sm" title="Download Resume" /> Resume
+        <Icon name="download" type="fas" size="sm" title="Download" /> Downloads
       </span>
     );
 
@@ -81,11 +81,8 @@ class AboutMe extends Component {
 
                     <Panel title={downPanelTitle}>
                       <div className="buttons">
-                        <ExtLink linkTo="https://www.linkedin.com/in/hegdeashwin/" classes="button is-warning">
-                          PDF
-                        </ExtLink>
-                        <ExtLink linkTo="https://www.linkedin.com/in/hegdeashwin/" classes="button is-warning">
-                          Plain Text
+                        <ExtLink linkTo="https://www.linkedin.com/in/hegdeashwin/" classes="button resume is-warning">
+                          Resume (PDF)
                         </ExtLink>
                       </div>
                     </Panel>
