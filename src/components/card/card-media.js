@@ -2,8 +2,18 @@ import './card-media.less';
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Icon from '../icon';
 
 class CardMedia extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.renderImage = this.renderImage.bind(this);
+    this.renderMap = this.renderMap.bind(this);
+    this.renderVideo = this.renderVideo.bind(this);
+    this.renderIcon = this.renderIcon.bind(this);
+  }
+  
   renderImage(source, alt) {
     return (
       <div className="card-image">
@@ -35,6 +45,16 @@ class CardMedia extends Component {
       </div>
     )
   }
+
+  renderIcon(source, classes, iconType, title) {
+    return (
+      <div className="card-icon">
+        <figure className="image">
+          <Icon name={source} size="5x" classes={classes} type={iconType} title={title} />
+        </figure>
+      </div>
+    )
+  }
   
   render() {
     const {
@@ -43,6 +63,9 @@ class CardMedia extends Component {
       alt,
       width,
       height,
+      title,
+      iconType,
+      classes
     } = this.props;
 
     let mediaContent = this.renderImage(source, alt);
@@ -51,6 +74,8 @@ class CardMedia extends Component {
       mediaContent = this.renderMap(source, width, height);
     } else if (type === 'video') {
       mediaContent = this.renderVideo(source, width, height);
+    } else if (type === 'icon') {
+      mediaContent = this.renderIcon(source, classes, iconType, title);
     }
 
     return (  
