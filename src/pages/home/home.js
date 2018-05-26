@@ -33,7 +33,7 @@ class Home extends Component {
             </Card>
           </div>
 
-          <div className="column">
+          {/*<div className="column">
             <Card>
               <CardMedia classes="youtube" type="icon" source="youtube" title="Learn through Videos" iconType="fab" />
               <CardContent title="Tech Blogs & Articles">
@@ -41,7 +41,7 @@ class Home extends Component {
                 <Link to="work/videos" className="button is-warning">Browse all Tech Videos</Link>
               </CardContent>
             </Card>
-          </div>
+          </div> */}
 
           
         </div>
