@@ -67,11 +67,8 @@ class Photography extends Component {
     return (
       <section className="photography-component">
         <p className="is-size-5">
-          In my pursuit of happiness for wildlife and bird photography, here are some of my favourites in different categories.
-        </p>
-        
-        <p className="is-size-5">
-          Also, find all my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album.
+          In my pursuit of happiness for wildlife and bird watching and photography, here are some of my favourites and find all 
+          my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album.
         </p>
 
         <div className="columns">

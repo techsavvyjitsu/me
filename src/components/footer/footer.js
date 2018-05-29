@@ -45,14 +45,17 @@ class Footer extends Component {
             </div>
           </div>
           <hr />
+
           <div className="content has-text-centered">
             <p>
-              This website is developed and maintained with <Icon name="heart" size="lg" type="fas"/> by <Link to="#">Ashwin Hegde</Link><br/> and supports&nbsp;
+              This website is developed and maintained with <Icon name="heart" size="lg" type="fas"/> by <Link to="#">Ashwin Hegde</Link>
+            </p>
+            <p>and supports&nbsp;
               <Icon name="chrome" size="lg" type="fab" title="Support on Google Chrome"/>&nbsp;
               <Icon name="firefox" size="lg" type="fab" title="Support on Mozilla Firefox"/>&nbsp;
               <Icon name="safari" size="lg" type="fab" title="Support on Apple Safari MacOS"/>&nbsp;
               <Icon name="internet-explorer" size="lg" type="fab" title="Support on Microsoft Internet Explore 11 or above"/>&nbsp;
-              <Icon name="edge" size="lg" type="fab" title="Support on Microsoft Edge"/>&nbsp; browsers on&nbsp;
+              <Icon name="edge" size="lg" type="fab" title="Support on Microsoft Edge"/> browsers on&nbsp;
               <Icon name="mobile-alt" size="lg" type="fas" title="Support on mobile"/>&nbsp;
               <Icon name="tablet-alt" size="lg" type="fas" title="Support on tabs"/>&nbsp;
               <Icon name="desktop" size="lg" type="fas" title="Support on desktop"/>&nbsp; devices
@@ -62,6 +65,7 @@ class Footer extends Component {
               is licensed <ExtLink linkTo="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</ExtLink>.
             </p>
           </div>
+
         </div>
       </footer>
     );
