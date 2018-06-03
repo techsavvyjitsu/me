@@ -1,14 +1,50 @@
-import 'bulma-ext-carousel-css';
 import './hero.less';
 
 import React, { Component } from 'react';
-import '../bulma-carousel/bulma-carousel.min';
+import ParticlesJS from '../particlesjs';
+import Typed from 'typed.js';
 
 class Hero extends Component {
+  typing() {
+    new Typed('.typed-wrapper', {
+      strings: [
+        'Wake up. Ashwin ...',
+        'Here is someone who loves working on JavaScript, Python and Go ... etc. is visiting your website',
+        'Hello there, welcome to my website ... this is Ashwin',
+        'Follow the website links to know more about me and my work ...',
+        'Click, Click, Click ...'
+      ],
+      typeSpeed: 50,
+      loop: true
+    });
+  }
+
+  componentDidMount() {
+    window.addEventListener('load', this.typing);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('load', this.typing);
+  }
+
   render() {
     return (
       <div className="hero-component">
-        <section className="hero is-large has-carousel">
+        <ParticlesJS 
+          bodyClasses="particle-body"
+          componentClasses="particle-component-night">
+          
+          <div className="hero-body">
+            <div className="container hero-body-content">
+              <p className="subtitle has-text-primary typed-wrapper"></p>
+            </div>
+          </div>
+
+        </ParticlesJS>
+
+        
+
+        {/*<section className="hero is-large has-carousel">
           <div className="hero-carousel carousel-animated carousel-animate-fade" data-autoplay="true">
             <div className='carousel-container'>
               <div className='carousel-item has-background is-active'>
@@ -28,7 +64,7 @@ class Hero extends Component {
           <div className="hero-body has-text-centered">
             <p className="has-text-white author-copyright">Photographed by Ashwin Hegde</p>
           </div>
-        </section>
+        </section> */}
       </div>
     );
   }
