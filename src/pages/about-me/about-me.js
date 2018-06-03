@@ -105,13 +105,13 @@ class AboutMe extends Component {
 
                   <ul className="is-size-5">
                     <li>
-                      <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Business Requirements" /> Business Requirements.
+                      <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Business requirements" /> Business requirements.
                     </li>
                     <li>
-                      <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Improve developer’s experience, tools and utilities" /> Improve developers experience, tools and utilities.
+                      <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="User experience" /> User experience.
                     </li>
                     <li>
-                      <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="User’s experience" /> Users experience.
+                      <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="Developer experience and utilities" /> Developer experience and utilities.
                     </li>
                   </ul>
                   <br/>
@@ -133,8 +133,8 @@ class AboutMe extends Component {
                 </Panel>
 
                 <Panel title={achPanelTitle}>
-                  <p className="year-title is-size-5 has-text-link has-text-weight-semibold">Year 2018</p>
-                  <ul className="is-size-5">
+                  <p className="is-size-5 has-text-weight-semibold has-text-info has-background-grey">Year 2018</p>
+                  <ul className="is-size-5 has-year-content">
                     <li>
                       Tech speaker in sessions/meetups/conferences: 
                       <ul>
@@ -160,8 +160,9 @@ class AboutMe extends Component {
                       </ul>
                     </li>
                   </ul>
-                  <p className="year-title is-size-5 has-text-link has-text-weight-semibold">Year 2017</p>
-                  <ul className="is-size-5">
+
+                  <p className="is-size-5 has-text-weight-semibold has-text-info has-background-grey">Year 2017</p>
+                  <ul className="is-size-5 has-year-content">
                     <li>
                       Became tech speaker in internal JavaScript sessions/meetups/conferences at PayPal. Below are few topics which I covered:
                       <ul>
@@ -172,8 +173,8 @@ class AboutMe extends Component {
                     </li>
                   </ul>
 
-                  <p className="year-title is-size-5 has-text-link has-text-weight-semibold">Year 2013 - 2016</p>
-                  <ul className="is-size-5">
+                  <p className="is-size-5 has-text-weight-semibold has-text-info has-background-grey">Year 2013 - 2016</p>
+                  <ul className="is-size-5 has-year-content">
                     <li>
                       Became internal trainer and mentor at Cybage software. Below are few topics which I covered:
                       <ul>
