@@ -1,6 +1,6 @@
 {
   "name": "me",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "private": true,
   "dependencies": {
     "ajv": "^6.4.0",
