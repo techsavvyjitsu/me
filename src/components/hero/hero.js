@@ -8,11 +8,12 @@ class Hero extends Component {
   typing() {
     new Typed('.typed-wrapper', {
       strings: [
-        'Wake up. Ashwin ...',
-        'Here is someone who loves working on JavaScript, Python and Go ... etc. is visiting your website',
-        'Hello there, welcome to my website ... this is Ashwin',
-        'Follow the website links to know more about me and my work ...',
-        'Click, Click, Click ...'
+        '> Wake up. Ashwin ...',
+        '> Here is someone who loves working on ...',
+        '> JavaScript, Python and Go ... etc. and is visiting your website',
+        '> Hello there, welcome to my website ... this is Ashwin',
+        '> Follow the website links to know more about me and my work ...',
+        '> Click, Click, Click ...'
       ],
       typeSpeed: 50,
       loop: true
