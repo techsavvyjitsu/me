@@ -10,7 +10,8 @@ class Hero extends Component {
       strings: [
         '> Wake up. Ashwin ...',
         '> Here is someone who loves working on ...',
-        '> JavaScript, Python and Go ... etc. and is visiting your website',
+        '> JavaScript, Python and Go ... etc. is visiting your website',
+        '> Connecting ...',
         '> Hello there, welcome to my website ... this is Ashwin',
         '> Follow the website links to know more about me and my work ...',
         '> Click, Click, Click ...'
