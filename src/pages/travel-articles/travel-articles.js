@@ -11,7 +11,7 @@ class TravelArticles extends Component {
         <div className="columns">
           <div className="column">
             <Message>
-              <p className="is-size-4">Trip to Bannerghatta Biological Park</p>
+              <p className="is-size-4">Visit to Bannerghatta Biological Park, Bangalore</p>
               <hr/>
               <ExtLink linkTo="https://medium.com/@hegdeashwin/trip-to-bannerghatta-biological-park-9d7240e67588" classes="button is-warning">
                 <Icon name="medium" size="lg" title="Navigate to the project on medium.com" />&nbsp;Medium

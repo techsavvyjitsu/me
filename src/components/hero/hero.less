@@ -1,3 +1,8 @@
+// Varibles
+@night: #242424;
+@terminal: #000;
+
+// Styles
 .hero-component {
   .author-copyright {
     font-family: 'Monsieur La Doulaise', cursive;
@@ -6,6 +11,27 @@
     position: absolute;
     left: 50px;
     bottom: 20px;
+  }
+
+  .particle-component-night {
+    background-color: @night;
+  }
+
+  .particle-body {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+  }
+
+  .hero-body-content {
+    background-color: @terminal;
+    opacity: 0.5;
+    padding: 20px;
+    border: 1px solid;
+
+    p.typed-wrapper {
+      z-index: 2;
+    }
   }
 }
 
