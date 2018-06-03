@@ -12,7 +12,8 @@ class Hobby extends Component {
           <div className="column is-3">
             <aside className="menu">
               <ul className="menu-list">
-                <li><Link to="/hobby/photography" activeClassName="is-active"><Icon name="images" type="far" size="sm" title="Hobby" /> Photography</Link></li>
+                <li><Link to="/hobby/photography" activeClassName="is-active"><Icon name="camera" type="fas" size="sm" title="Photography" /> Photography</Link></li>
+                <li><Link to="/hobby/photos" activeClassName="is-active"><Icon name="images" type="far" size="sm" title="Hobby" /> My Photos</Link></li>
                 <li><Link to="/hobby/donations" activeClassName="is-active"><Icon name="heart" type="fas" size="sm" title="Donations" /> Donations</Link></li>
                 <li><Link to="/hobby/visits" activeClassName="is-active"><Icon name="suitcase" type="fas" size="sm" title="Visited Places" /> Visited Places</Link></li>
                 <li><Link to="/hobby/articles" activeClassName="is-active"><Icon name="newspaper" type="fas" size="sm" title="Travel Articles" /> Travel Articles</Link></li>
