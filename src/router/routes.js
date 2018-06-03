@@ -10,6 +10,7 @@ import Home from '../pages/home';
 import AboutMe from '../pages/about-me';
 import Hobby from '../pages/hobby';
 import Photography from '../pages/photography';
+import Photos from '../pages/photos';
 import Donations from '../pages/donations';
 import Visits from '../pages/visits';
 import Work from '../pages/work';
@@ -40,6 +41,7 @@ const Routes = (
       <Route path = "hobby" component = {Hobby}>
         <IndexRedirect to="/hobby/photography" />
         <Route path = "photography" component = {Photography} />
+        <Route path = "photos" component = {Photos} />
         <Route path = "donations" component = {Donations} />
         <Route path = "visits" component = {Visits} />
         <Route path = "articles" component = {TravelArticles} />
