@@ -68,7 +68,8 @@ class Photography extends Component {
       <section className="photography-component">
         <p className="is-size-5">
           In my pursuit of happiness for wildlife and bird watching and photography, here are some of my favourites and find all 
-          my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album.
+          my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album,
+          please feel free to share, like and comments.
         </p>
 
         <div className="columns">
@@ -99,6 +100,49 @@ class Photography extends Component {
             </div>
           }
         </div>
+        
+        {/*<div className="parallax">
+          <div className="my-fav-pic my-fav-pic-1">
+            <div className="copyright has-text-black">
+              Copyright 2018 &copy; Ashwin Hegde
+            </div>
+          </div>
+
+          <section className="photo-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </section>
+
+          <div className="my-fav-pic my-fav-pic-2">
+            <div className="copyright has-text-black">
+              Copyright 2018 &copy; Ashwin Hegde
+            </div>
+          </div>
+
+          <section className="photo-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </section>
+
+          <div className="my-fav-pic my-fav-pic-3">
+            <div className="copyright has-text-black">
+              Copyright 2018 &copy; Ashwin Hegde
+            </div>
+          </div>
+
+          <section className="photo-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </section>
+
+          <div className="my-fav-pic my-fav-pic-4">
+            <div className="copyright has-text-black">
+              Copyright 2018 &copy; Ashwin Hegde
+            </div>
+          </div>
+
+          <section className="photo-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </section>
+        </div> */}
+
       </section>
     );
   }
