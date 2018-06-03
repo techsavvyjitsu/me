@@ -136,7 +136,7 @@ class AboutMe extends Component {
                   <p className="year-title is-size-5 has-text-link has-text-weight-semibold">Year 2018</p>
                   <ul className="is-size-5">
                     <li>
-                      Tech speaker in sessions/meetups/conferences (upcoming): 
+                      Tech speaker in sessions/meetups/conferences: 
                       <ul>
                         <li>
                           <Icon name="check-circle" classes="has-text-primary" type="far" size="sm" title="GraphQL - A new API query language" /> GraphQL - A new API query language.
