@@ -2,91 +2,114 @@ module.exports = {
   "birds": [
     {
       "category": "Owl",
-      "linkTo": "https://en.wikipedia.org/wiki/Owl"
-    },
-    {
-      "category": "Macaw",
-      "linkTo": "https://en.wikipedia.org/wiki/Macaw"
-    },
-    {
-      "category": "Parrot",
-      "linkTo": "https://en.wikipedia.org/wiki/Parrot"
-    },
-    {
-      "category": "BeeHumming",
-      "linkTo": "https://en.wikipedia.org/wiki/Bee_hummingbird"
-    },
-    {
-      "category": "Kingfisher",
-      "linkTo": "https://en.wikipedia.org/wiki/Kingfisher"
+      "linkToWiki": "Owl"
     },
     {
       "category": "Penguin",
-      "linkTo": "https://en.wikipedia.org/wiki/Penguin"
+      "linkToWiki": "Penguin"
     },
     {
       "category": "Bird-of-paradise",
-      "linkTo": "https://en.wikipedia.org/wiki/Bird-of-paradise"
+      "linkToWiki": "Bird-of-paradise"
+    },
+    {
+      "category": "BeeHumming",
+      "linkToWiki": "Bee_hummingbird"
+    },
+    {
+      "category": "Macaw",
+      "linkToWiki": "Macaw"
     },
     {
       "category": "Eagle",
-      "linkTo": "https://en.wikipedia.org/wiki/Eagle"
+      "linkToWiki": "Eagle"
+    },
+    {
+      "category": "Parrot",
+      "linkToWiki": "Parrot"
+    },
+    {
+      "category": "Kingfisher",
+      "linkToWiki": "Kingfisher"
     }
   ],
   "animals": [
     {
-      "category": "Red Panda",
-      "linkTo": "https://en.wikipedia.org/wiki/Red_panda"
+      "category": "Panda",
+      "types": [
+        {
+          "category": "Red",
+          "linkToWiki": "Red_panda"
+        },
+        {
+          "category": "Giant",
+          "linkToWiki": "Giant_panda"
+        }
+      ]
     },
     {
       "category": "Raccoon",
-      "linkTo": "https://en.wikipedia.org/wiki/Raccoon"
+      "linkToWiki": "Raccoon"
     },
     {
       "category": "Meerkats",
-      "linkTo": "https://en.wikipedia.org/wiki/Meerkat"
+      "linkToWiki": "Meerkat"
     },
     {
       "category": "Hippopotamus",
-      "linkTo": "https://en.wikipedia.org/wiki/Hippopotamus"
+      "linkToWiki": "Hippopotamus"
     },
     {
       "category": "Rhinoceros",
-      "linkTo": "https://en.wikipedia.org/wiki/Rhinoceros"
+      "linkToWiki": "Rhinoceros"
     },
     {
       "category": "Elephant",
-      "linkTo": "https://en.wikipedia.org/wiki/Elephant"
+      "linkToWiki": "Elephant"
+    },
+    {
+      "category": "Fox",
+      "types": [
+        {
+          "category": "Artic",
+          "linkToWiki": "Arctic_fox"
+        },
+        {
+          "category": "Fennec",
+          "linkToWiki": "Fennec_fox"
+        },
+        {
+          "category": "Red",
+          "linkToWiki": "Red_fox"
+        }
+      ]
     },
     {
       "category": "Tortoise",
-      "linkTo": "https://en.wikipedia.org/wiki/Tortoise"
+      "linkToWiki": "Tortoise"
     },
     {
-      "category": "Grey Squirrel",
-      "linkTo": "https://en.wikipedia.org/wiki/Eastern_gray_squirrel"
-    },
-    {
-      "category": "Artic Ground Squirrel",
-      "linkTo": "https://en.wikipedia.org/wiki/Arctic_ground_squirrel"
-    },
-    {
-      "category": "Artic Fox",
-      "linkTo": "https://en.wikipedia.org/wiki/Arctic_ground_squirrel"
-    },
-    {
-      "category": "Red Fox",
-      "linkTo": "https://en.wikipedia.org/wiki/Red_fox"
+      "category": "Squirrel",
+      "types": [
+        {
+          "category": "Grey",
+          "linkToWiki": "Eastern_gray_squirrel"
+        },
+        {
+          "category": "Artic Ground",
+          "linkToWiki": "Arctic_ground_squirrel"
+        }
+      ]
     }
   ],
   "underwater": [
     {
       "category": "Whale",
-      "linkTo": "https://en.wikipedia.org/wiki/Whale"
+      "linkToWiki": "Whale"
     },
     {
       "category": "Turtle",
-      "linkTo": "https://en.wikipedia.org/wiki/Turtle"
+      "linkToWiki": "Turtle"
     }
   ]
 }

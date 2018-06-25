@@ -5,6 +5,8 @@ import Icon from '../../components/icon';
 import ExtLink from '../../components/ext-link';
 import { birds, animals, underwater } from './fav-wishlist';
 
+const wikiBaseUrl = `https://en.wikipedia.org/wiki/`;
+
 class Photography extends Component {
   constructor(props) {
     super(props);
@@ -14,30 +16,34 @@ class Photography extends Component {
   }
   
   renderChildList(items) {
-    return items.map((item) => {
+    return items.map((item, index) => {
+      const parseLink = `${wikiBaseUrl}${item.linkToWiki}`;
+      const childEl = (
+        <ExtLink linkTo={parseLink}>{item.category}</ExtLink>
+      );
+
+      if (items.length === index+1) {
+        return childEl;
+      }
+
       return (
-        <li className="has-background-white-ter">{item}</li>
+        <span>{childEl}, </span>
       )
     });
   }
 
   renderList(items) {
     return items.map((item) => {
+      const parseLink = `${wikiBaseUrl}${item.linkToWiki}`;
       let category = (
         <li className="has-background-grey-lighter">
-          <ExtLink linkTo={item.linkTo}>{item.category}</ExtLink>
+          <ExtLink linkTo={parseLink}>{item.category}</ExtLink>
         </li>
       );
 
-      if (item.names) {
+      if (item.types) {
         category = (
-          <li>{item.category}
-            <ul className="is-size-6 child-list">
-              {
-                this.renderChildList(item.names)
-              }
-            </ul>
-          </li>
+          <li>{item.category}: {this.renderChildList(item.types)}</li>
         )
       }
 
@@ -48,7 +54,7 @@ class Photography extends Component {
   render() {
     const aniPanelTitle = (
       <span>
-        <Icon name="paw" type="fas" size="sm" title="Animals" /> Animals
+        <Icon name="paw" type="fas" size="sm" title="Animals" /> Animals &amp; Reptiles
       </span>
     );
 
@@ -67,9 +73,7 @@ class Photography extends Component {
     return (
       <section className="photography-component">
         <p className="is-size-5">
-          In my pursuit of happiness for wildlife and bird watching and photography, here are some of my favourites and find all 
-          my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album,
-          please feel free to share, like and comments.
+          In my pursuit of happiness for wildlife and bird watching and photography, here are some of my favourites.
         </p>
 
         <div className="columns">
@@ -100,6 +104,11 @@ class Photography extends Component {
             </div>
           }
         </div>
+
+        <p className="is-size-5">
+          You can find my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album,
+          please feel free to share, like and comments.
+        </p>
         
         {/*<div className="parallax">
           <div className="my-fav-pic my-fav-pic-1">
