@@ -1,12 +1,23 @@
 module.exports = {
   "orgs": [
     {
-      "text": "www.wildlifeshelter.com",
-      "linkTo": "//www.wildlifeshelter.com"
+      "websites": [{
+        "prefix": "WWF - India: ",
+        "link": "www.wwfindia.org"
+      }, {
+        "link": "www.worldwildlife.org"
+      }],
+      "title": "World Wide Fund",
+      "youtubeHash": "MNmNY95jGIA"
     },
     {
-      "text": "www.canadahelps.org/en/dn/10649",
-      "linkTo": "//www.canadahelps.org/en/dn/10649"
+      "websites": [{
+        "link": "www.wildlifeshelter.com"
+      }, {
+        "link": "www.canadahelps.org/en/dn/10649"
+      }],
+      "title": "NLWS - Northern Lights Wildlife Shelter",
+      "youtubeHash": "tPZzaPeZutw"
     }
   ]
 }
