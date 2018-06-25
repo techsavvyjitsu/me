@@ -50,11 +50,6 @@ class Donations extends Component {
       <section className="donations-component">
         <Panel title="Donations for Wildlife shelter, food supply, protection, etc.">
           {this.renderList(orgs)}
-          {/*<div className="rows">
-            <div className="row">
-              <YouTube embedId="tPZzaPeZutw" />
-            </div>
-    </div> */}
         </Panel>
       </section>
     );
