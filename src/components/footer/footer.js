@@ -21,6 +21,9 @@ class Footer extends Component {
               <ExtLink linkTo="https://www.instagram.com/ashwin.hegde3/" classes="social-icon instagram">
                 <Icon name="instagram" size="2x" title="Follow me on Instagram" />
               </ExtLink>
+              <ExtLink linkTo="https://www.pexels.com/@ashwin-hegde-544866" classes="social-icon instagram">
+                <Icon name="camera" type="fas" size="2x" title="Follow me on Pexels" />
+              </ExtLink>
               <ExtLink linkTo="https://medium.com/@hegdeashwin" classes="social-icon github">
                 <Icon name="medium" size="2x" title="Clap on Medium" />
               </ExtLink>
@@ -32,9 +35,6 @@ class Footer extends Component {
               </ExtLink>
               <ExtLink linkTo="https://www.linkedin.com/in/hegdeashwin/" classes="social-icon linkedin">
                 <Icon name="linkedin" size="2x" title="Connect me on Linkedin" />
-              </ExtLink>
-              <ExtLink linkTo="https://twitter.com/hegdeashwin3" classes="social-icon twitter">
-                <Icon name="twitter" size="2x" title="Follow me on Twitter" />
               </ExtLink>
               <ExtLink linkTo="https://en.wikipedia.org/wiki/User:Hegdeashwin" classes="social-icon wikipedia">
                 <Icon name="wikipedia-w" size="2x" title="Find me on Wikipedia" />
