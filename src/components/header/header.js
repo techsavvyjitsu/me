@@ -2,7 +2,6 @@ import './header.less';
 import React, { Component } from 'react';
 import Icon from '../../components/icon';
 import { Link } from 'react-router';
-import selfPic from '../../assets/imgs/self.jpeg';
 
 class Header extends Component {
   constructor(props) {
@@ -44,27 +43,24 @@ class Header extends Component {
   }
 
   render() {
-    return (  
-      <nav className="navbar is-light header-component">
+    return (
+      <nav className="header-component navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
-          <div className="navbar-brand">
-
-            <Link className="navbar-item" to="/">
-              <img src={selfPic} alt="Hello World! I am Ashwin, Welcome to my website" /> <strong>Hello World!</strong>
-            </Link>
-            <div className="navbar-burger burger" data-target="navMenuColordark">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-
-          <div id="navMenuColordark" className="navbar-menu">
-            <div className="navbar-end">
-              <Link className="navbar-item" to="/aboutme"><Icon name="user" type="fas" size="sm" title="About" />&nbsp;About</Link>
-              <Link className="navbar-item" to="/work/projects"><Icon name="briefcase" type="fas" size="sm" title="Works" />&nbsp;Work</Link>
-              <Link className="navbar-item" to="/hobby/photography"><Icon name="binoculars" type="fas" size="sm" title="Hobbies" />&nbsp;Hobbies</Link>
-            </div>
+          <Link className="navbar-brand" to="/">
+            <img src="https://res.cloudinary.com/hegdeashwin/image/upload/v1533905081/self.jpg" alt="Hello World! I am Ashwin, Welcome to my website" /> <span className="navbar-brand mb-0 h1">Hello World!</span>
+          </Link>
+          <div className="collapse navbar-collapse">
+            <ul className="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+              <li className="nav-item">
+                <Link className="nav-link" to="/aboutme"><Icon name="user" type="fas" size="sm" title="About" />&nbsp;About</Link>
+              </li>
+              {/*<li className="nav-item">
+                <Link className="nav-link" to="/work/projects"><Icon name="briefcase" type="fas" size="sm" title="Works" />&nbsp;Work</Link>
+              </li>*/}
+              <li className="nav-item">
+                <Link className="nav-link" to="/hobby/photography"><Icon name="binoculars" type="fas" size="sm" title="Hobbies" />&nbsp;Hobbies</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>

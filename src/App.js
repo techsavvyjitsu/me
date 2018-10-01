@@ -1,21 +1,17 @@
 // Package
-import React, { Component } from 'react';
+import React from 'react';
 
 // Components
 import Header from './components/header';
 import Footer from './components/footer';
-import ScrollTop from './components/scroll-top';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="app-component">
         <Header />
-        <section className="main-section">
-          {this.props.children}
-        </section>
+        {this.props.children}
         <Footer />
-        <ScrollTop />
       </div>
     );
   }

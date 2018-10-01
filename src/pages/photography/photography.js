@@ -1,6 +1,7 @@
 import './photography.less';
 import React, { Component } from 'react';
 import Panel from '../../components/panel';
+import { Link } from 'react-router';
 import Icon from '../../components/icon';
 import ExtLink from '../../components/ext-link';
 import { birds, animals, underwater } from './fav-wishlist';
@@ -72,14 +73,24 @@ class Photography extends Component {
 
     return (
       <section className="photography-component">
-        <p className="is-size-5">
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+            <li className="breadcrumb-item"><Link to="/hobby/photography">Hobbies</Link></li>
+            <li className="breadcrumb-item active" aria-current="page">My Photography</li>
+          </ol>
+        </nav>
+
+        <p>
           In my pursuit of happiness for wildlife and bird watching and photography, here are some of my favourites.
+          You can find my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album,
+          please feel free to share, like and comments.
         </p>
 
-        <div className="columns">
+        <div className="row">
           {
             birds &&
-            <div className="column">
+            <div className="col-md-4">
               <Panel title={birdsPanelTitle}>
                 <ul className="is-size-6 parent-list">{this.renderList(birds)}</ul>
               </Panel>
@@ -88,7 +99,7 @@ class Photography extends Component {
 
           {
             animals &&
-            <div className="column">
+            <div className="col-md-4">
               <Panel title={aniPanelTitle}>
                 <ul className="is-size-6 parent-list">{this.renderList(animals)}</ul>
               </Panel>
@@ -97,61 +108,13 @@ class Photography extends Component {
 
           {
             underwater &&
-            <div className="column">
+            <div className="col-md-4">
               <Panel title={waterPanelTitle}>
                 <ul className="is-size-6 parent-list">{this.renderList(underwater)}</ul>
               </Panel>
             </div>
           }
         </div>
-
-        <p className="is-size-5">
-          You can find my wildlife and bird photography on <ExtLink linkTo="http://yourshot.nationalgeographic.com/profile/1648246/">National Geographic &bull; YourShot</ExtLink> album,
-          please feel free to share, like and comments.
-        </p>
-        
-        {/*<div className="parallax">
-          <div className="my-fav-pic my-fav-pic-1">
-            <div className="copyright has-text-black">
-              Copyright 2018 &copy; Ashwin Hegde
-            </div>
-          </div>
-
-          <section className="photo-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </section>
-
-          <div className="my-fav-pic my-fav-pic-2">
-            <div className="copyright has-text-black">
-              Copyright 2018 &copy; Ashwin Hegde
-            </div>
-          </div>
-
-          <section className="photo-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </section>
-
-          <div className="my-fav-pic my-fav-pic-3">
-            <div className="copyright has-text-black">
-              Copyright 2018 &copy; Ashwin Hegde
-            </div>
-          </div>
-
-          <section className="photo-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </section>
-
-          <div className="my-fav-pic my-fav-pic-4">
-            <div className="copyright has-text-black">
-              Copyright 2018 &copy; Ashwin Hegde
-            </div>
-          </div>
-
-          <section className="photo-description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </section>
-        </div> */}
-
       </section>
     );
   }

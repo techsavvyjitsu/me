@@ -1,32 +1,32 @@
-.error-component {
-  font-family: 'Lato', sans-serif;
-  position: relative; 
-  max-width: 1024px;
-  margin: 0 auto;
+// Variables
+@errorPageBg: #f5f5f5;
+@errorMsgBorderColor: #cccccc;
+@containerBg: #fff;
 
-  img {
-    width: 100%;
+.error-component {
+  background-color: @containerBg;
+
+  .container {
+    width: 75%;
+    border: 1px solid @errorMsgBorderColor;
+    margin: 72px auto 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: @containerBg url('https://res.cloudinary.com/hegdeashwin/image/upload/v1533905080/error.gif') no-repeat 0 51px;
   }
 
-  .content {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    padding: 20px;
-    text-align: center;
+  div {
+    padding: 60px 40px 50px 186px;
+  }
 
-    h2, p {
-      color: white;
-    }
-
-    h2 {
-      font-weight: 300;
-      font-size: 21em;
-    }
-
-    p {
-      font-weight: 400;
-    }
+  h2 {
+    color: #218bdc;
+    font-size: 24px;
+    display: block;
+    padding: 0 0 14px 0;
+    border-bottom: 1px solid @errorMsgBorderColor;
+    margin-bottom: 12px;
+    font-weight: normal;
   }
 }

@@ -9,6 +9,7 @@
     "bulma-timeline": "git+https://github.com/hegdeashwin/bulma-timeline.git",
     "classnames": "^2.2.5",
     "history": "^3.2.1",
+    "jarallax": "^1.10.3",
     "less": "^3.0.4",
     "object-assign": "4.1.1",
     "promise": "8.0.1",

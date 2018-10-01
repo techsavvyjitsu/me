@@ -9,8 +9,7 @@ class CardTitle extends Component {
 
     return (  
       <div className="card-title-component has-text-centered">
-        <p className="title is-4">{title}</p>
-        <p className="subtitle is-6 has-text-grey">{subTitle}</p>
+        <h5 class="card-title">{title}</h5>
       </div>
     );
   }

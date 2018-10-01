@@ -1,26 +1,33 @@
 import './hobby.less';
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import Icon from '../../components/icon';
 
 class Hobby extends Component {
   
   render() {
     return (
       <section className="hobby-component container">
-        <div className="columns">
-          <div className="column is-3">
-            <aside className="menu">
-              <ul className="menu-list">
-                <li><Link to="/hobby/photography" activeClassName="is-active"><Icon name="camera" type="fas" size="sm" title="Photography" /> Photography</Link></li>
-                <li><Link to="/hobby/donations" activeClassName="is-active"><Icon name="heart" type="fas" size="sm" title="Donations" /> Donations</Link></li>
-                <li><Link to="/hobby/visits" activeClassName="is-active"><Icon name="suitcase" type="fas" size="sm" title="Visited Places" /> Visited Places</Link></li>
-                <li><Link to="/hobby/photos" activeClassName="is-active"><Icon name="images" type="far" size="sm" title="Hobby" /> My Photos</Link></li>
-                <li><Link to="/hobby/articles" activeClassName="is-active"><Icon name="newspaper" type="fas" size="sm" title="Travel Articles" /> Travel Articles</Link></li>
-              </ul>
-            </aside>
+        <div className="row">
+          <div className="col-lg-3 mt-3 mb-3">
+            <div className="list-group">
+              <Link to="/hobby/photography" className="list-group-item list-group-item-action">
+                My Photography
+              </Link>
+              <Link to="/hobby/donations" className="list-group-item list-group-item-action">
+                My Donations
+              </Link>
+              <Link to="/hobby/visits" className="list-group-item list-group-item-action">
+                My Visited Places
+              </Link>
+              {/*<Link to="/hobby/photos" className="list-group-item list-group-item-action">
+                My Photos
+              </Link>*/}
+              <Link to="/hobby/articles" className="list-group-item list-group-item-action">
+                My Travel Articles
+              </Link>
+            </div>
           </div>
-          <div className="column is-9">
+          <div className="col-lg-9 mt-3 mb-3">
             {this.props.children}
           </div>
         </div>

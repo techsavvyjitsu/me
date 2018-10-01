@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Message extends Component {
+class Message extends React.Component {
   render() {
     return (
-      <article className="message-component message is-info">
-        <div className="message-body">
-          {this.props.children}
-        </div>
-      </article>
+      <div className="message-component alert alert-info">
+        {this.props.children}
+      </div>
     );
   }
 }
