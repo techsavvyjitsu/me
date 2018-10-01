@@ -1,0 +1,32 @@
+// Variables
+@errorPageBg: #f5f5f5;
+@errorMsgBorderColor: #cccccc;
+@containerBg: #fff;
+
+.error-component {
+  background-color: @containerBg;
+
+  .container {
+    width: 75%;
+    border: 1px solid @errorMsgBorderColor;
+    margin: 72px auto 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: @containerBg url('https://res.cloudinary.com/hegdeashwin/image/upload/v1533905080/error.gif') no-repeat 0 51px;
+  }
+
+  div {
+    padding: 60px 40px 50px 186px;
+  }
+
+  h2 {
+    color: #218bdc;
+    font-size: 24px;
+    display: block;
+    padding: 0 0 14px 0;
+    border-bottom: 1px solid @errorMsgBorderColor;
+    margin-bottom: 12px;
+    font-weight: normal;
+  }
+}

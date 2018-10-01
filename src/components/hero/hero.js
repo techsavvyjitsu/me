@@ -1,18 +1,17 @@
 import './hero.less';
 
 import React, { Component } from 'react';
-import ParticlesJS from '../particlesjs';
 import Typed from 'typed.js';
+import Matrix from '../matrix';
 
 class Hero extends Component {
   typing() {
     new Typed('.typed-wrapper', {
       strings: [
         '> Wake up. Ashwin ...',
-        '> Here is someone who loves working on ...',
-        '> JavaScript, Python and Go ... etc. is visiting your website',
+        '> Someone is trying to visiting your website ...',
         '> Connecting ...',
-        '> Hello there, welcome to my website ... this is Ashwin',
+        '> Hello there, welcome to my website ...',
         '> Follow the website links to know more about me and my work ...',
         '> Click, Click, Click ...'
       ],
@@ -32,17 +31,15 @@ class Hero extends Component {
   render() {
     return (
       <div className="hero-component">
-        <ParticlesJS 
-          bodyClasses="particle-body"
-          componentClasses="particle-component-night">
+        <Matrix content="Hello World! My name is Ashwin" fontSize="10">
           
           <div className="hero-body">
             <div className="container hero-body-content">
-              <p className="subtitle has-text-primary typed-wrapper"></p>
+              <p className="typed-wrapper"></p>
             </div>
           </div>
 
-        </ParticlesJS>
+        </Matrix>
       </div>
     );
   }

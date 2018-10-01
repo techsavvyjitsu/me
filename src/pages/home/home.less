@@ -1,9 +1,39 @@
 .home-component {
-  .features-access {
-    padding: 20px;
+
+  .jarallax {
+    position: relative;
+    z-index: 0;
+    min-height: 800px;
+
+    > .jarallax-img {
+      position: relative;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      z-index: -100;
+    }
+  }
+  
+  .jarallax-table {
+    display: table;
+    width: 100%;
+    height: 800px;
+    background-color: rgba(39, 35, 51, 0.6);
+    color: #fff;
   }
 
-  .card-component {
-    box-shadow: none;
+  .jarallax-table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .jarallax-gap {
+    padding: 50px;
+    overflow: hidden;
+
+    h1 {
+      text-align: center;
+    }
   }
 }

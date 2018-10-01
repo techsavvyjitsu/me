@@ -1,6 +1,7 @@
 // Varibles
 @night: #242424;
-@terminal: #000;
+@terminalBg: #000;
+@terminalColor: #0F0;
 
 // Styles
 .hero-component {
@@ -13,19 +14,10 @@
     bottom: 20px;
   }
 
-  .particle-component-night {
-    background-color: @night;
-  }
-
-  .particle-body {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-  }
-
   .hero-body-content {
-    background-color: @terminal;
-    opacity: 0.5;
+    background-color: @terminalBg;
+    color: @terminalColor;
+    opacity: 0.8;
     padding: 20px;
     border: 1px solid;
 
@@ -33,13 +25,8 @@
       z-index: 2;
     }
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .hero-component {
-    .hero.has-carousel {
-      height: 250px;
-    } 
+  .hero-body {
+    height: 374px;
   }
 }
-

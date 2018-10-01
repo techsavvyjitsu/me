@@ -23,7 +23,7 @@ class CardContent extends Component {
     }
 
     return (
-      <div className="card-content-component card-content">
+      <div className="card-content-component card-body">
         {cardTitle}
         <div className="content">{this.props.children}</div>
       </div>

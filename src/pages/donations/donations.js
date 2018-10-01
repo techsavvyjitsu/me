@@ -1,7 +1,7 @@
 // Packages
 import './donations.less';
 import React, { Component } from 'react';
-import Panel from '../../components/panel';
+import { Link } from 'react-router';
 import ExtLink from '../../components/ext-link';
 import YouTube from '../../components/youtube';
 import { orgs } from './donation-list';
@@ -25,20 +25,14 @@ class Donations extends Component {
 
   renderList(items) {
     return items.map((item) => {
-      let labelWebsite = 'the website: ';
-      if (item.websites && item.websites.length > 1) {
-        labelWebsite = 'these websites: ';
-      }
-
       return (
-        <div className="columns single-org-details">
-          <div className="column">
-            <h2 className="is-size-6 has-text-info has-text-weight-semibold">{item.title}</h2>
-            <p className="website is-size-6">Please visit {labelWebsite} for more information on donation: </p>
-            <ul className="is-size-6">{this.renderWebsites(item.websites)}</ul>
-          </div>
-          <div className="column">
-            <YouTube embedId={item.youtubeHash} />
+        <div className="card-list-component card mb-4 box-shadow">
+          <YouTube embedId={item.youtubeHash} />
+          <div className="card-body bg-light">
+            <p className="lead card-title">{item.title}</p>
+            <div className="d-flex justify-content-between align-items-center">
+              <ul className="is-size-6">{this.renderWebsites(item.websites)}</ul>
+            </div>
           </div>
         </div>
       );
@@ -47,10 +41,19 @@ class Donations extends Component {
 
   render() {
     return (  
-      <section className="donations-component">
-        <Panel title="Donations for Wildlife shelter, food supply, protection, etc.">
-          {this.renderList(orgs)}
-        </Panel>
+      <section className="donation-component">
+        <nav aria-label="breadcrumb">
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+            <li className="breadcrumb-item"><Link to="/hobby/photography">Hobbies</Link></li>
+            <li className="breadcrumb-item active" aria-current="page">My Donations</li>
+          </ol>
+        </nav>
+        <p>
+          I do make donations on specific personal events like on my birthdate, happy earth day etc. and here are the list of organizations to whom I support. Please feel free to follow the links and make your own donations.
+        </p>
+
+        {this.renderList(orgs)}
       </section>
     );
   }
