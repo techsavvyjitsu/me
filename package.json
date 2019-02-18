@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.4.0",
-    "bootstrap": "^4.1.3",
+    "bootstrap": "^4.3.1",
     "bulma-carousel": "git+https://github.com/hegdeashwin/bulma-carousel.git#develop",
     "bulma-timeline": "git+https://github.com/hegdeashwin/bulma-timeline.git",
     "classnames": "^2.2.5",
